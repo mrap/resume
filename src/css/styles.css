@@ -20,7 +20,6 @@ body {
   width: 8.5in;
   height: 11in;
   margin: 0;
-  padding: 24px;
 }
 
 .page > .container {
@@ -57,13 +56,14 @@ body {
 
 .timeline {
   position: relative;
+  padding-bottom: 1em;
 }
 
-.timeline-milestone {
+.timeline-milestone-icon {
   position: relative;
   text-align: center;
   background: white;
-  margin-top: -6px;
+  margin-top: -4px;
   padding: 2px 0;
 }
 

@@ -56,6 +56,25 @@ const jobItems = [
   },
 ];
 
+const projectItems = [
+  {
+    title: 'Zen Typing',
+    subtitle: 'A smarter way to improve your typing. Open-sourced web app built with AngularJS + Go. Uses an e cent word analyzer library built in Go.',
+    detail: 'Github: mrap/combo, mrap/wordpatterns',
+    startDate: 'December 2014',
+    endDate: 'January 2015',
+    faIcon: 'fa-keyboard-o',
+  },
+  {
+    title: 'Skimi.io',
+    subtitle: 'Read a zillion times faster. Speed-reading web app built with AngularJS+Rails.',
+    detail: 'Github: mrap/skim',
+    startDate: 'March 7th, 2014',
+    endDate: 'March 9th, 2014',
+    faIcon: 'fa-keyboard-o',
+  },
+];
+
 const App = React.createClass({
   render: function() {
     return (
@@ -68,7 +87,16 @@ const App = React.createClass({
                 subtitle="Building Beyond Myself"
                 avatarSrc="/src/img/avatar.png"
               />
-              <Timeline items={jobItems} />
+              <Timeline
+                title="The Story"
+                headerIcon="fa-clock-o"
+                items={jobItems}
+              />
+              <Timeline
+                title="Pet Projects"
+                headerIcon="fa-rocket"
+                items={projectItems}
+              />
             </div>
             <div className="one-half column">
             </div>
@@ -103,8 +131,8 @@ const Timeline = React.createClass({
       <div className="timeline">
         <div className="page-line"></div>
         <TimelineHeader
-          title="The Story"
-          faIcon="fa-clock-o"
+          title={this.props.title}
+          faIcon={this.props.headerIcon}
         />
         {this.props.items.map(item => {
           return <TimelineItem item={item} />
@@ -125,12 +153,7 @@ const TimelineItem = React.createClass({
           </div>
         </div>
         <div className="two columns">
-          <div className="timeline-milestone">
-            <span className="fa-stack fa-lg">
-              <i className="fa fa-circle fa-stack-2x"></i>
-              <i className={`fa ${this.props.item.faIcon} fa-stack-1x fa-inverse`}></i>
-            </span>
-          </div>
+          <TimelineMilestoneIcon faIcon={this.props.item.faIcon} />
         </div>
         <div className="six columns">
           <div className="item-info">
@@ -158,12 +181,10 @@ const TimelineHeader = React.createClass({
           <div className="invisible">Filler</div>
         </div>
         <div className="two columns">
-          <div className="timeline-milestone">
-            <span className="fa-stack fa-lg">
-              <i className="fa fa-circle fa-stack-2x"></i>
-              <i className={`fa ${this.props.faIcon} fa-stack-1x fa-inverse`}></i>
-            </span>
-          </div>
+          <TimelineMilestoneIcon
+            faIcon={this.props.faIcon}
+            isLarge={true}
+          />
         </div>
         <div className="six columns">
           <div className="timeline-header-title">
@@ -175,6 +196,20 @@ const TimelineHeader = React.createClass({
   }
 });
 
+const TimelineMilestoneIcon = React.createClass({
+  render: function() {
+    const stackClassName = this.props.isLarge ? "fa-stack fa-lg" : "fa-stack";
+
+    return (
+      <div className="timeline-milestone-icon">
+        <span className={stackClassName}>
+          <i className="fa fa-circle fa-stack-2x"></i>
+          <i className={`fa ${this.props.faIcon} fa-stack-1x fa-inverse`}></i>
+        </span>
+      </div>
+    );
+  }
+});
 ReactDOM.render(
   <App />,
   document.getElementById('content')
