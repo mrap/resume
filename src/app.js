@@ -229,7 +229,7 @@ const HeroTitle = React.createClass({
     return (
       <div className="hero-header">
         <div className="row">
-          <div className="five columns">
+          <div className="five columns avatar">
             <img width="122" src={this.props.avatarSrc} alt="Me" className="u-max-full-width"/>
           </div>
           <div className="hero-title seven columns">
