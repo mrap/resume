@@ -1,16 +1,19 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,400italic|Share:400italic,700);
-
+@import 'https://fonts.googleapis.com/css?family=Roboto:400,900|Share:400i,700';
 @page {
   size: letter;
 }
 
-html {
+html body {
   font-family: 'Roboto', sans-serif;
   font-size: 14pt;
 }
 
 body {
   margin: 0;
+}
+
+.invisible {
+  visibility: hidden;
 }
 
 .page {
@@ -26,6 +29,7 @@ body {
 
 .hero-header {
   font-family: 'Share', cursive;
+  margin-bottom: 1em;
 }
 
 .hero-title > .title {
@@ -38,4 +42,53 @@ body {
   font-size: 14pt;
   font-style: italic;
   font-weight: normal;
+}
+
+.job {
+  font-size: 11pt;
+  margin-bottom: 10pt;
+  line-height: 1.4;
+}
+
+.job-dates {
+  font-size: 9pt;
+  text-align: right;
+}
+
+.timeline {
+  position: relative;
+}
+
+.timeline-milestone {
+  position: relative;
+  text-align: center;
+  background: white;
+  margin-top: -6px;
+  padding: 2px 0;
+}
+
+.timeline-header-title {
+  font-family: 'Share', cursive;
+  font-size: 20pt;
+  margin-bottom: 1.5em;
+}
+
+.job-company {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 14pt;
+}
+
+.job-location {
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
+  font-size: 9pt;
+}
+
+.page-line {
+  top: 1em;
+  bottom: 0;
+  left: 160px;
+  position: absolute;
+  border-left: 3px solid grey;
 }
