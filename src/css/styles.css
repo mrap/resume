@@ -44,13 +44,13 @@ body {
   font-weight: normal;
 }
 
-.job {
+.timeline-item {
   font-size: 11pt;
   margin-bottom: 10pt;
   line-height: 1.4;
 }
 
-.job-dates {
+.item-dates {
   font-size: 9pt;
   text-align: right;
 }
@@ -73,13 +73,13 @@ body {
   margin-bottom: 1.5em;
 }
 
-.job-company {
+.item-title {
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
   font-size: 14pt;
 }
 
-.job-location {
+.item-detail {
   font-family: 'Roboto', sans-serif;
   font-weight: lighter;
   font-size: 9pt;

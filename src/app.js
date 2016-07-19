@@ -1,55 +1,55 @@
 'use strict';
 
-const Locations = {
+const Location = {
   LA: 'Los Angeles, CA',
   SF: 'San Francisco, CA',
 };
 
-const jobs = [
+const jobItems = [
   {
-    companyName: 'OTOY, Inc.',
-    position: 'Senior Software Engineer',
-    location: Locations.LA,
+    title: 'OTOY, Inc.',
+    subtitle: 'Senior Software Engineer',
+    detail: Location.LA,
     startDate: 'February 2015',
     endDate: 'January 2016',
     faIcon: 'fa-braille',
   },
   {
-    companyName: 'Rollbar, Inc.',
-    position: 'Fullstack Engineer',
-    location: Locations.SF,
+    title: 'Rollbar, Inc.',
+    subtitle: 'Fullstack Engineer',
+    detail: Location.SF,
     startDate: 'September 2014',
     endDate: 'October 2014',
     faIcon: 'fa-stack-overflow',
   },
   {
-    companyName: 'Rise Labs, Inc.',
-    position: 'Web & iOS Engineer',
-    location: Locations.SF,
+    title: 'Rise Labs, Inc.',
+    subtitle: 'Web & iOS Engineer',
+    detail: Location.SF,
     startDate: 'June 2014',
     endDate: 'September 2014',
     faIcon: 'fa-cutlery',
   },
   {
-    companyName: 'Freelance Engineer',
-    position: 'Fullstack, Web, iOS',
-    location: Locations.SF,
+    title: 'Freelance Engineer',
+    subtitle: 'Fullstack, Web, iOS',
+    detail: Location.SF,
     startDate: 'March 2013',
     endDate: 'August 2014',
     faIcon: 'fa-briefcase',
   },
   {
-    companyName: 'BlurtAbout, Inc.',
-    position: 'Co-founder, Lead iOS Eng',
-    location: Locations.SF,
+    title: 'BlurtAbout, Inc.',
+    subtitle: 'Co-founder, Lead iOS Eng',
+    detail: Location.SF,
     startDate: 'November 2011',
     endDate: 'March 2013',
     faIcon: 'fa-pied-piper',
   },
   {
-    companyName: 'Apple, Inc.',
-    position: 'Retail Specialist',
-    location: Locations.SF,
+    title: 'Apple, Inc.',
+    subtitle: 'Retail Specialist',
+    detail: Location.SF,
     startDate: 'July 2011',
     endDate: 'November 2011',
     faIcon: 'fa-apple',
@@ -68,7 +68,7 @@ const App = React.createClass({
                 subtitle="Building Beyond Myself"
                 avatarSrc="/src/img/avatar.png"
               />
-              <Timeline jobs={jobs} />
+              <Timeline items={jobItems} />
             </div>
             <div className="one-half column">
             </div>
@@ -106,8 +106,8 @@ const Timeline = React.createClass({
           title="The Story"
           faIcon="fa-clock-o"
         />
-        {this.props.jobs.map(j => {
-          return <TimelineItem job={j} />
+        {this.props.items.map(item => {
+          return <TimelineItem item={item} />
         })}
       </div>
     );
@@ -117,31 +117,31 @@ const Timeline = React.createClass({
 const TimelineItem = React.createClass({
   render: function() {
     return (
-      <div className="row job">
+      <div className="row timeline-item">
         <div className="four columns">
-          <div className="job-dates">
-            <div>{this.props.job.startDate} -</div>
-            <div>{this.props.job.endDate}</div>
+          <div className="item-dates">
+            <div>{this.props.item.startDate} -</div>
+            <div>{this.props.item.endDate}</div>
           </div>
         </div>
         <div className="two columns">
           <div className="timeline-milestone">
             <span className="fa-stack fa-lg">
               <i className="fa fa-circle fa-stack-2x"></i>
-              <i className={`fa ${this.props.job.faIcon} fa-stack-1x fa-inverse`}></i>
+              <i className={`fa ${this.props.item.faIcon} fa-stack-1x fa-inverse`}></i>
             </span>
           </div>
         </div>
         <div className="six columns">
-          <div className="job-info">
-            <div className="job-company">
-              {this.props.job.companyName}
+          <div className="item-info">
+            <div className="item-title">
+              {this.props.item.title}
             </div>
-            <div className="job-position">
-              {this.props.job.position}
+            <div className="item-subtitle">
+              {this.props.item.subtitle}
             </div>
-            <div className="job-location">
-              {this.props.job.location}
+            <div className="item-detail">
+              {this.props.item.detail}
             </div>
           </div>
         </div>
