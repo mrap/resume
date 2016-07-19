@@ -10,6 +10,7 @@ const App = React.createClass({
               <HeroTitle
                 title="Mike Rapadas"
                 subtitle="Building Beyond Myself"
+                avatarSrc="/src/img/avatar.png"
               />
             </div>
             <div className="one-half column">
@@ -27,7 +28,7 @@ const HeroTitle = React.createClass({
       <div className="container hero-header">
         <div className="row">
           <div className="five columns">
-            <img width="122" src="/src/img/avatar.png" alt="Me" className="u-max-full-width"/>
+            <img width="122" src={this.props.avatarSrc} alt="Me" className="u-max-full-width"/>
           </div>
           <div className="hero-title seven columns">
             <div className="title">{this.props.title}</div>
