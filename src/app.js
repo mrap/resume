@@ -71,7 +71,7 @@ const projectItems = [
     detail: 'Github: mrap/skim',
     startDate: 'March 7th, 2014',
     endDate: 'March 9th, 2014',
-    faIcon: 'fa-keyboard-o',
+    faIcon: 'fa-book',
   },
 ];
 
