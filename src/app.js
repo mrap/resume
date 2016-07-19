@@ -164,7 +164,7 @@ const App = React.createClass({
             </div>
             <div className="five columns contact-info">
               <div className="inline-icon-item">
-                <i className="fa fa-mobile fa-fw"></i><span>(415)887-8085</span>
+                <i className="fa fa-mobile fa-fw"></i><span>(415) 887-8085</span>
               </div>
               <div className="inline-icon-item">
                 <i className="fa fa-envelope fa-fw"></i><span>mike@mrap.me</span>
