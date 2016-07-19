@@ -1,0 +1,23 @@
+{
+  "name": "resume",
+  "authors": [
+    "Mike Rapadas <mike@mrap.me>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "None",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "babel": "*",
+    "skeleton": "^2.0.4",
+    "react": "^15.2.1"
+  }
+}
