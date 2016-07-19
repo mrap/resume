@@ -39,6 +39,7 @@ const HeroTitle = React.createClass({
     );
   }
 });
+
 ReactDOM.render(
   <App />,
   document.getElementById('content')
