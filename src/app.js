@@ -141,6 +141,14 @@ const skillsIconItems = [
   },
 ];
 
+const tidbits = [
+  'Personally built and deployed applications used by +100K users worldwide.',
+  'Spritz needed 3 years and $3.5m to release a “demo” of their speed reading app. Built and deployed my own in 3 days.',
+  'Rebuilt Rise’s iOS camera plugin: 6.8x the photo quality at only half the memory.',
+  'Apple has been featuring Sunriser, iOS app, in the App Store since May 2014.',
+  'Open-sourced one of the first JSON parsers for Swift.',
+];
+
 const App = React.createClass({
   render: function() {
     return (
@@ -181,6 +189,21 @@ const App = React.createClass({
                 faIcon="fa-cube"
                 items={skillsIconItems}
               />
+              <TimelineHeader
+                title="Tidbits"
+                faIcon="fa-thumbs-up"
+              />
+              {
+                tidbits.map(t => {
+                  return (
+                    <div className="row tidbit">
+                      <div className="twelve columns">
+                        {t}
+                      </div>
+                    </div>
+                  );
+                })
+              }
             </div>
           </div>
         </div>
