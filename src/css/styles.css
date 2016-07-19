@@ -59,8 +59,11 @@ body {
 }
 
 .timeline {
+  margin-bottom: 3em;
+}
+
+.timeline-items {
   position: relative;
-  padding-bottom: 1em;
 }
 
 .timeline-milestone-icon {

@@ -246,14 +246,16 @@ const Timeline = React.createClass({
   render: function() {
     return (
       <div className="timeline">
-        <div className="page-line"></div>
         <TimelineHeader
           title={this.props.title}
           faIcon={this.props.headerIcon}
         />
-        {this.props.items.map(item => {
-          return <TimelineItem item={item} />
-        })}
+        <div className="timeline-items">
+          <div className="page-line"></div>
+          {this.props.items.map(item => {
+            return <TimelineItem item={item} />
+          })}
+        </div>
       </div>
     );
   }
