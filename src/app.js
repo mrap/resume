@@ -219,6 +219,10 @@ const App = React.createClass({
             </div>
           </div>
         </div>
+
+        <div className="corner-footer">
+          I <i className="fa fa-heart-o"></i> <i className="devicon-vim-plain"></i>
+        </div>
       </div>
     );
   }

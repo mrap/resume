@@ -19,6 +19,7 @@ body {
 }
 
 .page {
+  position: relative;
   width: 8.5in;
   height: 11in;
   margin: 0;
@@ -157,4 +158,12 @@ i {
 .inline-icon-item > span {
   margin-left: 0.5em;
   font-size: 10pt;
+}
+
+.corner-footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 1rem;
+  color: #62666b;
 }
