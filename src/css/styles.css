@@ -6,7 +6,7 @@
 
 html body {
   font-family: 'Open Sans', sans-serif;
-  font-size: 14pt;
+  font-size: 11pt;
   color: #3b4047;
 }
 
@@ -18,11 +18,17 @@ body {
   visibility: hidden;
 }
 
-.page {
+.page-wrapper {
   position: relative;
   width: 8.5in;
   height: 11in;
   margin: 0;
+}
+
+.page {
+  position: absolute;
+  top: 20px; right: 0; bottom:0; left: -40px;
+  margin: auto;
 }
 
 .page > .container {
@@ -107,7 +113,7 @@ i {
 .page-line {
   top: 1em;
   bottom: 0;
-  left: 174px;
+  left: 180px;
   position: absolute;
   border-left: 3px solid #8a8b8a;
 }
@@ -139,7 +145,6 @@ i {
 }
 
 .tidbit {
-  font-size: 10pt;
   margin-bottom: 1em;
 }
 

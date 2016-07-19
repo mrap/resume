@@ -81,16 +81,16 @@ const languageIconItems = [
     devicon: 'devicon-go-plain',
   },
   {
-    title: 'Swift/Obj-C',
-    devicon: 'devicon-apple-original',
-  },
-  {
     title: 'JS',
     devicon: 'devicon-javascript-plain',
   },
   {
     title: 'Java',
     devicon: 'devicon-java-plain',
+  },
+  {
+    title: 'Swift/Obj-C',
+    devicon: 'devicon-apple-original',
   },
   {
     title: 'Ruby',
@@ -124,6 +124,14 @@ const skillsIconItems = [
     devicon: 'devicon-android-plain',
   },
   {
+    title: 'RoR',
+    devicon: 'devicon-rails-plain',
+  },
+  {
+    title: 'AngularJS',
+    devicon: 'devicon-angularjs-plain',
+  },
+  {
     title: 'CSS',
     devicon: 'devicon-css3-plain',
   },
@@ -134,10 +142,6 @@ const skillsIconItems = [
   {
     title: 'HTML',
     devicon: 'devicon-html5-plain',
-  },
-  {
-    title: 'RoR',
-    devicon: 'devicon-rails-plain',
   },
 ];
 
@@ -218,10 +222,10 @@ const App = React.createClass({
               }
             </div>
           </div>
-        </div>
 
-        <div className="corner-footer">
-          I <i className="fa fa-heart-o"></i> <i className="devicon-vim-plain"></i>
+          <div className="corner-footer">
+            I <i className="fa fa-heart-o"></i> <i className="devicon-vim-plain"></i>
+          </div>
         </div>
       </div>
     );
