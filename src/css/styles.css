@@ -1,0 +1,41 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,400italic|Share:400italic,700);
+
+@page {
+  size: letter;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14pt;
+}
+
+body {
+  margin: 0;
+}
+
+.page {
+  width: 8.5in;
+  height: 11in;
+  margin: 0;
+  padding: 24px;
+}
+
+.page > .container {
+  width: 100%;
+}
+
+.hero-header {
+  font-family: 'Share', cursive;
+}
+
+.hero-title > .title {
+  font-size: 60pt;
+  line-height: 48pt;
+}
+
+.hero-title > .subtitle {
+  line-height: 2;
+  font-size: 14pt;
+  font-style: italic;
+  font-weight: normal;
+}
