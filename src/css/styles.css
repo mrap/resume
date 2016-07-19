@@ -1,11 +1,11 @@
-@import 'https://fonts.googleapis.com/css?family=Roboto:400,900|Share:400i,700';
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Share:400i,700';
 
 @page {
   size: letter;
 }
 
 html body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 14pt;
   color: #3b4047;
 }
@@ -86,13 +86,13 @@ i {
 }
 
 .item-title {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: bold;
   font-size: 14pt;
 }
 
 .item-detail {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: lighter;
   font-size: 9pt;
   color: #62666b;
