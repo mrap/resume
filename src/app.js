@@ -7,6 +7,14 @@ const Location = {
 
 const jobItems = [
   {
+    title: 'Ubiquiti Networks, Inc.',
+    subtitle: 'Software Engineer',
+    detail: Location.LA,
+    startDate: 'January 2016',
+    endDate: 'Present',
+    faIcon: 'fa-video-camera',
+  },
+  {
     title: 'OTOY, Inc.',
     subtitle: 'Senior Software Engineer',
     detail: Location.LA,
@@ -45,14 +53,6 @@ const jobItems = [
     startDate: 'November 2011',
     endDate: 'March 2013',
     faIcon: 'fa-pied-piper',
-  },
-  {
-    title: 'Apple, Inc.',
-    subtitle: 'Retail Specialist',
-    detail: Location.SF,
-    startDate: 'July 2011',
-    endDate: 'November 2011',
-    faIcon: 'fa-apple',
   },
 ];
 
