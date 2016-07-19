@@ -7,6 +7,7 @@
 html body {
   font-family: 'Roboto', sans-serif;
   font-size: 14pt;
+  color: #3b4047;
 }
 
 body {
@@ -30,6 +31,7 @@ body {
 .hero-header {
   font-family: 'Share', cursive;
   margin-bottom: 1em;
+  color: #3b4047;
 }
 
 .hero-title > .title {
@@ -42,6 +44,7 @@ body {
   font-size: 14pt;
   font-style: italic;
   font-weight: normal;
+  color: #6B6B69;
 }
 
 .timeline-item {
@@ -72,6 +75,11 @@ body {
   font-family: 'Share', cursive;
   font-size: 20pt;
   margin-bottom: 1em;
+  color: #3b4047;
+}
+
+i {
+  color: #3b4047;
 }
 
 .item-title {
@@ -84,6 +92,7 @@ body {
   font-family: 'Roboto', sans-serif;
   font-weight: lighter;
   font-size: 9pt;
+  color: #62666b;
 }
 
 .page-line {
@@ -91,7 +100,7 @@ body {
   bottom: 0;
   left: 174px;
   position: absolute;
-  border-left: 3px solid grey;
+  border-left: 3px solid #8a8b8a;
 }
 
 .icon-item {
@@ -123,4 +132,21 @@ body {
 .tidbit {
   font-size: 10pt;
   margin-bottom: 1em;
+}
+
+.inline-icon-item i {
+  vertical-align: middle;
+}
+
+.contact-info {
+  text-align: right;
+}
+
+.inline-icon-item {
+  color: #6B6B69;
+}
+
+.inline-icon-item > span {
+  margin-left: 0.5em;
+  font-size: 10pt;
 }
