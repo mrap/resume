@@ -75,18 +75,90 @@ const projectItems = [
   },
 ];
 
+const languageIconItems = [
+  {
+    title: 'Go',
+    devicon: 'devicon-go-plain',
+  },
+  {
+    title: 'Swift/Obj-C',
+    devicon: 'devicon-apple-original',
+  },
+  {
+    title: 'JS',
+    devicon: 'devicon-javascript-plain',
+  },
+  {
+    title: 'Java',
+    devicon: 'devicon-java-plain',
+  },
+  {
+    title: 'Ruby',
+    devicon: 'devicon-ruby-plain',
+  },
+  {
+    title: 'Python',
+    devicon: 'devicon-python-plain',
+  },
+  {
+    title: 'C',
+    devicon: 'devicon-c-plain',
+  },
+  {
+    title: 'C++',
+    devicon: 'devicon-cplusplus-plain',
+  },
+];
+
+const skillsIconItems = [
+  {
+    title: 'Node.js',
+    devicon: 'devicon-nodejs-plain',
+  },
+  {
+    title: 'React',
+    devicon: 'devicon-react-original',
+  },
+  {
+    title: 'Android',
+    devicon: 'devicon-android-plain',
+  },
+  {
+    title: 'CSS',
+    devicon: 'devicon-css3-plain',
+  },
+  {
+    title: 'Sass',
+    devicon: 'devicon-sass-original',
+  },
+  {
+    title: 'HTML',
+    devicon: 'devicon-html5-plain',
+  },
+  {
+    title: 'RoR',
+    devicon: 'devicon-rails-plain',
+  },
+];
+
 const App = React.createClass({
   render: function() {
     return (
       <div className="page">
         <div className="container">
           <div className="row">
-            <div className="one-half column">
+            <div className="seven columns">
               <HeroTitle
                 title="Mike Rapadas"
                 subtitle="Building Beyond Myself"
                 avatarSrc="/src/img/avatar.png"
               />
+            </div>
+            <div className="five columns">
+            </div>
+          </div>
+          <div className="row">
+            <div className="seven columns">
               <Timeline
                 title="The Story"
                 headerIcon="fa-clock-o"
@@ -98,7 +170,17 @@ const App = React.createClass({
                 items={projectItems}
               />
             </div>
-            <div className="one-half column">
+            <div className="five columns">
+              <IconItems
+                title="Fluency"
+                faIcon="fa-code"
+                items={languageIconItems}
+              />
+              <IconItems
+                title="Skills"
+                faIcon="fa-cube"
+                items={skillsIconItems}
+              />
             </div>
           </div>
         </div>
@@ -152,10 +234,10 @@ const TimelineItem = React.createClass({
             <div>{this.props.item.endDate}</div>
           </div>
         </div>
-        <div className="two columns">
+        <div className="one column">
           <TimelineMilestoneIcon faIcon={this.props.item.faIcon} />
         </div>
-        <div className="six columns">
+        <div className="seven columns">
           <div className="item-info">
             <div className="item-title">
               {this.props.item.title}
@@ -177,7 +259,7 @@ const TimelineHeader = React.createClass({
   render: function() {
     return (
       <div className="row timeline-header">
-        <div className="four columns">
+        <div className="three columns">
           <div className="invisible">Filler</div>
         </div>
         <div className="two columns">
@@ -186,7 +268,7 @@ const TimelineHeader = React.createClass({
             isLarge={true}
           />
         </div>
-        <div className="six columns">
+        <div className="seven columns">
           <div className="timeline-header-title">
             {this.props.title}
           </div>
@@ -210,6 +292,40 @@ const TimelineMilestoneIcon = React.createClass({
     );
   }
 });
+
+const IconItems = React.createClass({
+  render: function() {
+    return (
+      <div className="icon-items">
+        <TimelineHeader
+          title={this.props.title}
+          faIcon={this.props.faIcon}
+        />
+        <div className="row">
+          {this.props.items.map(item => {
+            return (
+              <div className="three columns">
+                <IconItem {...item} />
+              </div>
+              );
+          })}
+        </div>
+      </div>
+    );
+  }
+});
+
+const IconItem = React.createClass({
+  render: function() {
+    return (
+      <div className="icon-item">
+        <i className={`${this.props.devicon}`}></i>
+        <div className="title">{this.props.title}</div>
+      </div>
+    );
+  }
+});
+
 ReactDOM.render(
   <App />,
   document.getElementById('content')

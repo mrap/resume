@@ -1,4 +1,5 @@
 @import 'https://fonts.googleapis.com/css?family=Roboto:400,900|Share:400i,700';
+
 @page {
   size: letter;
 }
@@ -70,7 +71,7 @@ body {
 .timeline-header-title {
   font-family: 'Share', cursive;
   font-size: 20pt;
-  margin-bottom: 1.5em;
+  margin-bottom: 1em;
 }
 
 .item-title {
@@ -88,7 +89,33 @@ body {
 .page-line {
   top: 1em;
   bottom: 0;
-  left: 160px;
+  left: 174px;
   position: absolute;
   border-left: 3px solid grey;
+}
+
+.icon-item {
+  text-align: center;
+}
+
+.icon-items {
+  margin-bottom: 3em;
+}
+
+/* Allow wrapping */
+.icon-items > .row .columns:nth-child(5n+0) {
+  margin-left: 0;
+}
+
+.icon-items > .row .columns:nth-child(n+5) {
+  margin-top: 1em;
+}
+
+.icon-item i {
+  font-size: 1.5em;
+}
+
+.icon-item > .title {
+  font-size: 10pt;
+  line-height: 1;
 }
