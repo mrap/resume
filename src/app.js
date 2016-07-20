@@ -205,7 +205,7 @@ const App = React.createClass({
                 faIcon="fa-cube"
                 items={skillsIconItems}
               />
-              <TimelineHeader
+              <SectionHeader
                 title="Tidbits"
                 faIcon="fa-thumbs-up"
               />
@@ -300,23 +300,28 @@ const TimelineItem = React.createClass({
   }
 });
 
+const SectionHeader = React.createClass({
+  render: function() {
+    return (
+      <div className="section-header-title">
+        {this.props.title}
+      </div>
+    );
+  }
+});
+
 const TimelineHeader = React.createClass({
   render: function() {
     return (
-      <div className="row timeline-header">
+      <div className="row">
         <div className="three columns">
           <div className="invisible">Filler</div>
         </div>
         <div className="two columns">
-          <TimelineMilestoneIcon
-            faIcon={this.props.faIcon}
-            isLarge={true}
-          />
+          <div className="invisible">Filler</div>
         </div>
         <div className="seven columns">
-          <div className="timeline-header-title">
-            {this.props.title}
-          </div>
+          <SectionHeader {...this.props} />
         </div>
       </div>
     );
@@ -342,7 +347,7 @@ const IconItems = React.createClass({
   render: function() {
     return (
       <div className="icon-items">
-        <TimelineHeader
+        <SectionHeader
           title={this.props.title}
           faIcon={this.props.faIcon}
         />
