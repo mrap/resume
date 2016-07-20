@@ -48,7 +48,7 @@ const jobItems = [
   },
   {
     title: 'BlurtAbout, Inc.',
-    subtitle: 'Co-founder, Lead iOS Eng',
+    subtitle: 'Co-founder, iOS Engineer',
     detail: Location.SF,
     startDate: 'November 2011',
     endDate: 'March 2013',
