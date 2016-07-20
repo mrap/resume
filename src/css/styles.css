@@ -110,9 +110,9 @@ i {
 }
 
 .page-line {
-  top: 1em;
+  top: 0;
   bottom: 0;
-  left: 180px;
+  left: 181px;
   position: absolute;
   border-left: 3px solid #8a8b8a;
 }
