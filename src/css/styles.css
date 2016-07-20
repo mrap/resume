@@ -126,7 +126,7 @@ i {
 }
 
 /* Allow wrapping */
-.icon-items > .row .columns:nth-child(5n+0) {
+.icon-items > .row .columns:nth-child(4n+1) {
   margin-left: 0;
 }
 
