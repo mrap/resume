@@ -143,6 +143,22 @@ const skillsIconItems = [
     title: 'HTML',
     devicon: 'devicon-html5-plain',
   },
+  {
+    title: 'Redis',
+    devicon: 'devicon-redis-plain',
+  },
+  {
+    title: 'MongoDB',
+    devicon: 'devicon-mongodb-plain',
+  },
+  {
+    title: 'Postgres',
+    devicon: 'devicon-postgresql-plain',
+  },
+  {
+    title: 'RT/Networking',
+    devicon: 'fa fa-connectdevelop',
+  },
 ];
 
 const tidbits = [
