@@ -7,7 +7,7 @@ const Location = {
 
 const jobItems = [
   {
-    title: 'Ubiquiti Networks, Inc.',
+    title: 'Ubiquiti Networks',
     subtitle: 'Software Engineer',
     detail: Location.LA,
     startDate: 'January 2016',
@@ -15,7 +15,7 @@ const jobItems = [
     faIcon: 'fa-video-camera',
   },
   {
-    title: 'OTOY, Inc.',
+    title: 'OTOY',
     subtitle: 'Senior Software Engineer',
     detail: Location.LA,
     startDate: 'February 2015',
@@ -23,7 +23,7 @@ const jobItems = [
     faIcon: 'fa-braille',
   },
   {
-    title: 'Rollbar, Inc.',
+    title: 'Rollbar',
     subtitle: 'Fullstack Engineer',
     detail: Location.SF,
     startDate: 'September 2014',
@@ -31,7 +31,7 @@ const jobItems = [
     faIcon: 'fa-stack-overflow',
   },
   {
-    title: 'Rise Labs, Inc.',
+    title: 'Rise Labs',
     subtitle: 'Web & iOS Engineer',
     detail: Location.SF,
     startDate: 'June 2014',
@@ -47,7 +47,7 @@ const jobItems = [
     faIcon: 'fa-briefcase',
   },
   {
-    title: 'BlurtAbout, Inc.',
+    title: 'BlurtAbout',
     subtitle: 'Co-founder, iOS Engineer',
     detail: Location.SF,
     startDate: 'November 2011',
