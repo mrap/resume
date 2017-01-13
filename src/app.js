@@ -63,7 +63,7 @@ const projectItems = [
     endDate: 'January 2015',
     faIcon: 'fa-keyboard-o',
     details: [
-      'A smarter way to improve your typing. Open-sourced web app built with AngularJS + Go. Uses an e cent word analyzer library built in Go.',
+      'A smarter way to improve your typing. Open-sourced web app built with AngularJS + Go. Uses a superfast word analyzer library built in Go.',
     ],
   },
   {
