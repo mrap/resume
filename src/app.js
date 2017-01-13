@@ -9,7 +9,7 @@ const jobItems = [
   {
     title: 'Ubiquiti Networks',
     subtitle: 'Software Engineer',
-    detail: Location.LA,
+    location: Location.LA,
     startDate: 'January 2016',
     endDate: 'Present',
     faIcon: 'fa-video-camera',
@@ -17,7 +17,7 @@ const jobItems = [
   {
     title: 'OTOY',
     subtitle: 'Senior Software Engineer',
-    detail: Location.LA,
+    location: Location.LA,
     startDate: 'February 2015',
     endDate: 'January 2016',
     faIcon: 'fa-braille',
@@ -25,7 +25,7 @@ const jobItems = [
   {
     title: 'Rollbar',
     subtitle: 'Fullstack Engineer',
-    detail: Location.SF,
+    location: Location.SF,
     startDate: 'September 2014',
     endDate: 'October 2014',
     faIcon: 'fa-stack-overflow',
@@ -33,7 +33,7 @@ const jobItems = [
   {
     title: 'Rise Labs',
     subtitle: 'Web & iOS Engineer',
-    detail: Location.SF,
+    location: Location.SF,
     startDate: 'June 2014',
     endDate: 'September 2014',
     faIcon: 'fa-cutlery',
@@ -41,7 +41,7 @@ const jobItems = [
   {
     title: 'Freelance Engineer',
     subtitle: 'Fullstack, Web, iOS',
-    detail: Location.SF,
+    location: Location.SF,
     startDate: 'March 2013',
     endDate: 'August 2014',
     faIcon: 'fa-briefcase',
@@ -49,7 +49,7 @@ const jobItems = [
   {
     title: 'BlurtAbout',
     subtitle: 'Co-founder, iOS Engineer',
-    detail: Location.SF,
+    location: Location.SF,
     startDate: 'November 2011',
     endDate: 'March 2013',
     faIcon: 'fa-pied-piper',
@@ -60,7 +60,7 @@ const projectItems = [
   {
     title: 'Zen Typing',
     subtitle: 'A smarter way to improve your typing. Open-sourced web app built with AngularJS + Go. Uses an e cent word analyzer library built in Go.',
-    detail: 'Github: mrap/combo, mrap/wordpatterns',
+    location: 'Github: mrap/combo, mrap/wordpatterns',
     startDate: 'December 2014',
     endDate: 'January 2015',
     faIcon: 'fa-keyboard-o',
@@ -68,7 +68,7 @@ const projectItems = [
   {
     title: 'Skimi.io',
     subtitle: 'Read a zillion times faster. Speed-reading web app built with AngularJS+Rails.',
-    detail: 'Github: mrap/skim',
+    location: 'Github: mrap/skim',
     startDate: 'March 7th, 2014',
     endDate: 'March 9th, 2014',
     faIcon: 'fa-book',
@@ -306,8 +306,8 @@ const TimelineItem = React.createClass({
             <div className="item-subtitle">
               {this.props.item.subtitle}
             </div>
-            <div className="item-detail">
-              {this.props.item.detail}
+            <div className="item-location">
+              {this.props.item.location}
             </div>
           </div>
         </div>
