@@ -1,4 +1,4 @@
-@import 'https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Share:400i,700';
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600|Share:400i,700';
 
 @page {
   size: letter;
@@ -66,7 +66,7 @@ body {
 }
 
 .item-dates {
-  font-size: 9pt;
+  font-size: 8pt;
   text-align: right;
 }
 
@@ -96,23 +96,32 @@ i {
   color: #3b4047;
 }
 
-.item-title {
+.item-header {
   font-family: 'Open Sans', sans-serif;
+  font-size: 12pt;
   font-weight: bold;
-  font-size: 14pt;
+}
+
+.item-header > * {
+  display: inline;
+}
+
+.item-role-at {
+  font-size: 0.8em;
+  font-weight: normal;
 }
 
 .item-location {
   font-family: 'Open Sans', sans-serif;
   font-weight: lighter;
-  font-size: 9pt;
+  font-size: 8pt;
   color: #62666b;
 }
 
 .page-line {
   top: 0;
   bottom: 0;
-  left: 181px;
+  left: 207px;
   position: absolute;
   border-left: 3px solid #8a8b8a;
 }
@@ -139,12 +148,13 @@ i {
 }
 
 .icon-item > .title {
-  font-size: 10pt;
+  font-size: 8pt;
   line-height: 1;
 }
 
 .tidbit {
   margin-bottom: 1em;
+  font-size: 10pt;
 }
 
 .inline-icon-item i {

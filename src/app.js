@@ -8,7 +8,7 @@ const Location = {
 const jobItems = [
   {
     title: 'Ubiquiti Networks',
-    subtitle: 'Software Engineer',
+    role: 'Software Engineer',
     location: Location.LA,
     startDate: 'January 2016',
     endDate: 'Present',
@@ -16,7 +16,7 @@ const jobItems = [
   },
   {
     title: 'OTOY',
-    subtitle: 'Senior Software Engineer',
+    role: 'Senior Software Engineer',
     location: Location.LA,
     startDate: 'February 2015',
     endDate: 'January 2016',
@@ -24,7 +24,7 @@ const jobItems = [
   },
   {
     title: 'Rollbar',
-    subtitle: 'Fullstack Engineer',
+    role: 'Fullstack Engineer',
     location: Location.SF,
     startDate: 'September 2014',
     endDate: 'October 2014',
@@ -32,15 +32,14 @@ const jobItems = [
   },
   {
     title: 'Rise Labs',
-    subtitle: 'Web & iOS Engineer',
+    role: 'iOS & Web Engineer',
     location: Location.SF,
     startDate: 'June 2014',
     endDate: 'September 2014',
     faIcon: 'fa-cutlery',
   },
   {
-    title: 'Freelance Engineer',
-    subtitle: 'Fullstack, Web, iOS',
+    title: 'Fullstack Freelance Engineer',
     location: Location.SF,
     startDate: 'March 2013',
     endDate: 'August 2014',
@@ -48,7 +47,7 @@ const jobItems = [
   },
   {
     title: 'BlurtAbout',
-    subtitle: 'Co-founder, iOS Engineer',
+    role: 'Co-founder, iOS Engineer',
     location: Location.SF,
     startDate: 'November 2011',
     endDate: 'March 2013',
@@ -59,19 +58,23 @@ const jobItems = [
 const projectItems = [
   {
     title: 'Zen Typing',
-    subtitle: 'A smarter way to improve your typing. Open-sourced web app built with AngularJS + Go. Uses an e cent word analyzer library built in Go.',
     location: 'Github: mrap/combo, mrap/wordpatterns',
     startDate: 'December 2014',
     endDate: 'January 2015',
     faIcon: 'fa-keyboard-o',
+    details: [
+      'A smarter way to improve your typing. Open-sourced web app built with AngularJS + Go. Uses an e cent word analyzer library built in Go.',
+    ],
   },
   {
     title: 'Skimi.io',
-    subtitle: 'Read a zillion times faster. Speed-reading web app built with AngularJS+Rails.',
     location: 'Github: mrap/skim',
     startDate: 'March 7th, 2014',
     endDate: 'March 9th, 2014',
     faIcon: 'fa-book',
+    details: [
+      'Read a zillion times faster. Speed-reading web app built with AngularJS+Rails.',
+    ],
   },
 ];
 
@@ -156,7 +159,7 @@ const skillsIconItems = [
     devicon: 'devicon-postgresql-plain',
   },
   {
-    title: 'RT/Networking',
+    title: 'Webrtc',
     devicon: 'fa fa-connectdevelop',
   },
 ];
@@ -198,7 +201,7 @@ const App = React.createClass({
             </div>
           </div>
           <div className="row">
-            <div className="seven columns">
+            <div className="eight columns">
               <Timeline
                 title="The Story"
                 headerIcon="fa-clock-o"
@@ -210,7 +213,7 @@ const App = React.createClass({
                 items={projectItems}
               />
             </div>
-            <div className="five columns">
+            <div className="four columns">
               <IconItems
                 title="Fluency"
                 faIcon="fa-code"
@@ -299,17 +302,36 @@ const TimelineItem = React.createClass({
           <TimelineMilestoneIcon faIcon={this.props.item.faIcon} />
         </div>
         <div className="seven columns">
-          <div className="item-info">
-            <div className="item-title">
-              {this.props.item.title}
-            </div>
-            <div className="item-subtitle">
-              {this.props.item.subtitle}
-            </div>
-            <div className="item-location">
-              {this.props.item.location}
-            </div>
+          <TimelineItemHeader {...this.props} />
+          <div className="item-details">
+            {this.props.item.details}
           </div>
+          <div className="item-location">
+            {this.props.item.location}
+          </div>
+        </div>
+      </div>
+    );
+  }
+});
+
+const TimelineItemHeader = React.createClass({
+  render: function() {
+    let role = null;
+    if (this.props.item.role) {
+      role = (
+        <div className="item-role">
+          {this.props.item.role}
+          <span className="item-role-at"> at </span>
+        </div>
+      );
+    }
+
+    return (
+      <div className="item-header">
+        {role}
+        <div className="item-title">
+          {this.props.item.title}
         </div>
       </div>
     );
