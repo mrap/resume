@@ -39,7 +39,7 @@ const jobItems = [
     faIcon: 'fa-cutlery',
   },
   {
-    title: 'Fullstack Freelance Engineer',
+    title: 'Freelance Fullstack Engineer',
     location: Location.SF,
     startDate: 'March 2013',
     endDate: 'August 2014',
