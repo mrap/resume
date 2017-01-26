@@ -73,10 +73,6 @@ body {
   text-align: right;
 }
 
-.item-details {
-  font-size: 9pt;
-}
-
 .timeline {
   margin-bottom: 3em;
 }
@@ -161,7 +157,10 @@ i {
 
 .tidbit {
   margin-bottom: 1em;
-  font-size: 10pt;
+}
+
+.tidbit, .item-details {
+  font-size: 9pt;
 }
 
 .inline-icon-item i {
