@@ -8,70 +8,75 @@ const Location = {
 const jobItems = [
   {
     title: 'Ubiquiti Networks',
-    subtitle: 'Software Engineer',
-    detail: Location.LA,
+    role: 'Software Engineer',
+    location: Location.LA,
     startDate: 'January 2016',
     endDate: 'Present',
     faIcon: 'fa-video-camera',
+    details: "Curated the core framework that backs our node.js application architecture. Led Android development of major video products, vastly increasing stability, performance, and maintainability.  Rebuilt our core Android video decoder to achieve real-time decoding and rendering without drift; eliminating 100% of related crashes while using 25% the original memory.",
   },
   {
     title: 'OTOY',
-    subtitle: 'Senior Software Engineer',
-    detail: Location.LA,
+    role: 'Senior Software Engineer',
+    location: Location.LA,
     startDate: 'February 2015',
     endDate: 'January 2016',
     faIcon: 'fa-braille',
+    details: "Built an awesome streaming client that streams desktops to mobile with super low latency @ +60fps.  Core member of the Octane Render Cloud (ORC) team. We created a cloud graphics rendering platform that transformed render times from weeks into hours.  Led the development of ORC's super-performant real-time frontend UI.",
   },
   {
     title: 'Rollbar',
-    subtitle: 'Fullstack Engineer',
-    detail: Location.SF,
+    role: 'Fullstack Engineer',
+    location: Location.SF,
     startDate: 'September 2014',
     endDate: 'October 2014',
     faIcon: 'fa-stack-overflow',
+    details: "Made issue management even easier by enabling users to connect and sync items with any of Rollbar's eleven integrated services, which include Github and Trello.  Made bugs easier to squash in Ruby by exposing local variable's state for each stack frame.",
   },
   {
     title: 'Rise Labs',
-    subtitle: 'Web & iOS Engineer',
-    detail: Location.SF,
+    role: 'iOS & Web Engineer',
+    location: Location.SF,
     startDate: 'June 2014',
     endDate: 'September 2014',
     faIcon: 'fa-cutlery',
+    details: "Rebuilt the iOS app's camera to snap photos at 6.8x original quality, while only using half the memory.  Rebuilt the coaching dashboard to be fully responsive for desktops, netbooks, and tablets.  Created the new flexible photo layout for browsing user meals at a glance.  Coded up a beautiful, full homepage redesign that shipped under a week.",
   },
   {
-    title: 'Freelance Engineer',
-    subtitle: 'Fullstack, Web, iOS',
-    detail: Location.SF,
+    title: 'Freelance Fullstack Engineer',
+    location: Location.SF,
     startDate: 'March 2013',
     endDate: 'August 2014',
     faIcon: 'fa-briefcase',
+    details: "Built and deployed a wide array of products on web, OSX, and iOS platforms.  Frequent, stable deployments via agile workflow.",
   },
   {
     title: 'BlurtAbout',
-    subtitle: 'Co-founder, iOS Engineer',
-    detail: Location.SF,
+    role: 'Co-founder, iOS Engineer',
+    location: Location.SF,
     startDate: 'November 2011',
     endDate: 'March 2013',
     faIcon: 'fa-pied-piper',
+    details: "All-hats founder doing anything and everything to create a relevant and super-connected social experience for mobile.",
   },
 ];
 
 const projectItems = [
   {
     title: 'Zen Typing',
-    subtitle: 'A smarter way to improve your typing. Open-sourced web app built with AngularJS + Go. Uses an e cent word analyzer library built in Go.',
-    detail: 'Github: mrap/combo, mrap/wordpatterns',
+    location: 'Github: mrap/combo, mrap/wordpatterns',
     startDate: 'December 2014',
     endDate: 'January 2015',
     faIcon: 'fa-keyboard-o',
+    details: 'A smarter way to improve your typing. Open-sourced web app built with AngularJS + Go. Uses a superfast word analyzer library built in Go.',
   },
   {
     title: 'Skimi.io',
-    subtitle: 'Read a zillion times faster. Speed-reading web app built with AngularJS+Rails.',
-    detail: 'Github: mrap/skim',
+    location: 'Github: mrap/skim',
     startDate: 'March 7th, 2014',
     endDate: 'March 9th, 2014',
     faIcon: 'fa-book',
+    details: 'Read a zillion times faster. Speed-reading web app built with AngularJS+Rails.',
   },
 ];
 
@@ -156,7 +161,7 @@ const skillsIconItems = [
     devicon: 'devicon-postgresql-plain',
   },
   {
-    title: 'RT/Networking',
+    title: 'Webrtc',
     devicon: 'fa fa-connectdevelop',
   },
 ];
@@ -198,11 +203,12 @@ const App = React.createClass({
             </div>
           </div>
           <div className="row">
-            <div className="seven columns">
+            <div className="eight columns">
               <Timeline
                 title="The Story"
                 headerIcon="fa-clock-o"
                 items={jobItems}
+                pageLine={true}
               />
               <Timeline
                 title="Pet Projects"
@@ -210,7 +216,7 @@ const App = React.createClass({
                 items={projectItems}
               />
             </div>
-            <div className="five columns">
+            <div className="four columns">
               <IconItems
                 title="Fluency"
                 faIcon="fa-code"
@@ -256,9 +262,11 @@ const HeroTitle = React.createClass({
           <div className="five columns avatar">
             <img width="122" src={this.props.avatarSrc} alt="Me" className="u-max-full-width"/>
           </div>
-          <div className="hero-title seven columns">
-            <div className="title">{this.props.title}</div>
-            <div className="subtitle">{this.props.subtitle}</div>
+          <div className="seven columns">
+            <div className="hero-title">
+              <div className="title">{this.props.title}</div>
+              <div className="subtitle">{this.props.subtitle}</div>
+            </div>
           </div>
         </div>
       </div>
@@ -275,7 +283,7 @@ const Timeline = React.createClass({
           faIcon={this.props.headerIcon}
         />
         <div className="timeline-items">
-          <div className="page-line"></div>
+          {(this.props.pageLine) ? <div className="page-line"></div> : null}
           {this.props.items.map(item => {
             return <TimelineItem item={item} />
           })}
@@ -299,17 +307,36 @@ const TimelineItem = React.createClass({
           <TimelineMilestoneIcon faIcon={this.props.item.faIcon} />
         </div>
         <div className="seven columns">
-          <div className="item-info">
-            <div className="item-title">
-              {this.props.item.title}
-            </div>
-            <div className="item-subtitle">
-              {this.props.item.subtitle}
-            </div>
-            <div className="item-detail">
-              {this.props.item.detail}
-            </div>
+          <TimelineItemHeader {...this.props} />
+          <div className="item-location">
+            {this.props.item.location}
           </div>
+          <div className="item-details">
+            {this.props.item.details}
+          </div>
+        </div>
+      </div>
+    );
+  }
+});
+
+const TimelineItemHeader = React.createClass({
+  render: function() {
+    let role = null;
+    if (this.props.item.role) {
+      role = (
+        <div className="item-role">
+          {this.props.item.role}
+          <span className="item-role-at"> at </span>
+        </div>
+      );
+    }
+
+    return (
+      <div className="item-header">
+        {role}
+        <div className="item-title">
+          {this.props.item.title}
         </div>
       </div>
     );
