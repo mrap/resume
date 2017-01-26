@@ -27,7 +27,7 @@ body {
 
 .page {
   position: absolute;
-  top: 20px; right: 0; bottom:0; left: -40px;
+  top: 20px; right: 0; bottom:0; left: -60px;
   margin: auto;
 }
 
@@ -43,12 +43,15 @@ body {
 
 .hero-header .avatar {
   text-align: right;
-  padding-right: 1em;
+}
+
+.hero-title {
+  margin-left: 32px; // align with timeline
 }
 
 .hero-title > .title {
-  font-size: 60pt;
-  line-height: 48pt;
+  font-size: 48pt;
+  line-height: 40pt;
 }
 
 .hero-title > .subtitle {
@@ -68,6 +71,10 @@ body {
 .item-dates {
   font-size: 8pt;
   text-align: right;
+}
+
+.item-details {
+  font-size: 9pt;
 }
 
 .timeline {
@@ -121,7 +128,7 @@ i {
 .page-line {
   top: 0;
   bottom: 0;
-  left: 207px;
+  left: 211px;
   position: absolute;
   border-left: 3px solid #8a8b8a;
 }

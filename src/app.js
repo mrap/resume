@@ -13,6 +13,7 @@ const jobItems = [
     startDate: 'January 2016',
     endDate: 'Present',
     faIcon: 'fa-video-camera',
+    details: "Curated the core framework that backs our node.js application architecture. Led Android development of major video products, vastly increasing stability, performance, and maintainability.  Rebuilt our core Android video decoder to achieve real-time decoding and rendering without drift; eliminating 100% of related crashes while using 25% the original memory.",
   },
   {
     title: 'OTOY',
@@ -21,6 +22,7 @@ const jobItems = [
     startDate: 'February 2015',
     endDate: 'January 2016',
     faIcon: 'fa-braille',
+    details: "Built an awesome streaming client that streams desktops to mobile with super low latency @ +60fps.  Core member of the Octane Render Cloud (ORC) team. We created a cloud graphics rendering platform that transformed render times from weeks into hours.  Led the development of ORC's super-performant real-time frontend UI.",
   },
   {
     title: 'Rollbar',
@@ -29,6 +31,7 @@ const jobItems = [
     startDate: 'September 2014',
     endDate: 'October 2014',
     faIcon: 'fa-stack-overflow',
+    details: "Made issue management even easier by enabling users to connect and sync items with any of Rollbar's eleven integrated services, which include Github and Trello.  Made bugs easier to squash in Ruby by exposing local variable's state for each stack frame.",
   },
   {
     title: 'Rise Labs',
@@ -37,6 +40,7 @@ const jobItems = [
     startDate: 'June 2014',
     endDate: 'September 2014',
     faIcon: 'fa-cutlery',
+    details: "Rebuilt the iOS app's camera to snap photos at 6.8x original quality, while only using half the memory.  Rebuilt the coaching dashboard to be fully responsive for desktops, netbooks, and tablets.  Created the new flexible photo layout for browsing user meals at a glance.  Coded up a beautiful, full homepage redesign that shipped under a week.",
   },
   {
     title: 'Freelance Fullstack Engineer',
@@ -44,6 +48,7 @@ const jobItems = [
     startDate: 'March 2013',
     endDate: 'August 2014',
     faIcon: 'fa-briefcase',
+    details: "Built and deployed a wide array of products on web, OSX, and iOS platforms.  Frequent, stable deployments via agile workflow.",
   },
   {
     title: 'BlurtAbout',
@@ -52,6 +57,7 @@ const jobItems = [
     startDate: 'November 2011',
     endDate: 'March 2013',
     faIcon: 'fa-pied-piper',
+    details: "All-hats founder doing anything and everything to create a relevant and super-connected social experience for mobile.",
   },
 ];
 
@@ -62,9 +68,7 @@ const projectItems = [
     startDate: 'December 2014',
     endDate: 'January 2015',
     faIcon: 'fa-keyboard-o',
-    details: [
-      'A smarter way to improve your typing. Open-sourced web app built with AngularJS + Go. Uses a superfast word analyzer library built in Go.',
-    ],
+    details: 'A smarter way to improve your typing. Open-sourced web app built with AngularJS + Go. Uses a superfast word analyzer library built in Go.',
   },
   {
     title: 'Skimi.io',
@@ -72,9 +76,7 @@ const projectItems = [
     startDate: 'March 7th, 2014',
     endDate: 'March 9th, 2014',
     faIcon: 'fa-book',
-    details: [
-      'Read a zillion times faster. Speed-reading web app built with AngularJS+Rails.',
-    ],
+    details: 'Read a zillion times faster. Speed-reading web app built with AngularJS+Rails.',
   },
 ];
 
@@ -206,6 +208,7 @@ const App = React.createClass({
                 title="The Story"
                 headerIcon="fa-clock-o"
                 items={jobItems}
+                pageLine={true}
               />
               <Timeline
                 title="Pet Projects"
@@ -259,9 +262,11 @@ const HeroTitle = React.createClass({
           <div className="five columns avatar">
             <img width="122" src={this.props.avatarSrc} alt="Me" className="u-max-full-width"/>
           </div>
-          <div className="hero-title seven columns">
-            <div className="title">{this.props.title}</div>
-            <div className="subtitle">{this.props.subtitle}</div>
+          <div className="seven columns">
+            <div className="hero-title">
+              <div className="title">{this.props.title}</div>
+              <div className="subtitle">{this.props.subtitle}</div>
+            </div>
           </div>
         </div>
       </div>
@@ -278,7 +283,7 @@ const Timeline = React.createClass({
           faIcon={this.props.headerIcon}
         />
         <div className="timeline-items">
-          <div className="page-line"></div>
+          {(this.props.pageLine) ? <div className="page-line"></div> : null}
           {this.props.items.map(item => {
             return <TimelineItem item={item} />
           })}
@@ -303,11 +308,11 @@ const TimelineItem = React.createClass({
         </div>
         <div className="seven columns">
           <TimelineItemHeader {...this.props} />
-          <div className="item-details">
-            {this.props.item.details}
-          </div>
           <div className="item-location">
             {this.props.item.location}
+          </div>
+          <div className="item-details">
+            {this.props.item.details}
           </div>
         </div>
       </div>
