@@ -23,7 +23,7 @@ const jobItems = [
     startDate: 'January 2016',
     endDate: 'January 2017',
     faIcon: 'fa-video-camera',
-    details: "Curated the core framework that backs our node.js application architecture. Led Android development of major video products, vastly increasing stability, performance, and maintainability.  Rebuilt our core Android video decoder to achieve real-time decoding and rendering without drift; eliminating 100% of related crashes while using 25% the original memory.",
+    details: "Curated the core framework that backs our node.js application architecture. Led Android development of major video products, vastly increasing stability, performance, and maintainability.  Rebuilt our core video decoder, achieving buttery-smooth realtime decoding+rendering at 25% the original memory.",
   },
   {
     title: 'OTOY',
@@ -32,7 +32,7 @@ const jobItems = [
     startDate: 'February 2015',
     endDate: 'January 2016',
     faIcon: 'fa-braille',
-    details: "Built an awesome streaming client that streams desktops to mobile with super low latency @ +60fps.  Core member of the Octane Render Cloud (ORC) team. We created a cloud graphics rendering platform that transformed render times from weeks into hours.  Led the development of ORC's super-performant real-time frontend UI.",
+    details: `Engineered our blazingly fast streaming client: realtime desktops to mobile with super low latency @ +60fps.  Core engineer of Octane Render Cloud (ORC), a cloud graphics rendering platform that turned render "weeks" into "hours".  Led development of ORC's frontend dashboard.`,
   },
   {
     title: 'Rollbar',
@@ -50,7 +50,7 @@ const jobItems = [
     startDate: 'June 2014',
     endDate: 'September 2014',
     faIcon: 'fa-cutlery',
-    details: "Rebuilt the iOS app's camera to snap photos at 6.8x original quality, while only using half the memory.  Rebuilt the coaching dashboard to be fully responsive for desktops, netbooks, and tablets.  Created the new flexible photo layout for browsing user meals at a glance.  Coded up a beautiful, full homepage redesign that shipped under a week.",
+    details: "Rebuilt the iOS app's camera to snap photos at 6.8x original quality, while only using half the memory.  Rebuilt the coaching dashboard to be fully responsive for all devices.  Created the new flexible photo layout for browsing user meals at a glance.  Hacked and shipped the beautiful homepage redesign in only three days.",
   },
   {
     title: 'Freelance Fullstack Engineer',
