@@ -1,17 +1,27 @@
 'use strict';
 
 const Location = {
+  CUPERTINO: 'Cupertino, CA',
   LA: 'Los Angeles, CA',
   SF: 'San Francisco, CA',
 };
 
 const jobItems = [
   {
+    title: 'Amazon Web Services',
+    role: 'Software Development Engineer',
+    location: Location.CUPERTINO,
+    startDate: 'March 2017',
+    endDate: 'Present',
+    faIcon: 'fa-amazon',
+    details: "Trailblazing the next generation of mission-critical automation at AWS, Hardware Engineering.",
+  },
+  {
     title: 'Ubiquiti Networks',
     role: 'Software Engineer',
     location: Location.LA,
     startDate: 'January 2016',
-    endDate: 'Present',
+    endDate: 'January 2017',
     faIcon: 'fa-video-camera',
     details: "Curated the core framework that backs our node.js application architecture. Led Android development of major video products, vastly increasing stability, performance, and maintainability.  Rebuilt our core Android video decoder to achieve real-time decoding and rendering without drift; eliminating 100% of related crashes while using 25% the original memory.",
   },
