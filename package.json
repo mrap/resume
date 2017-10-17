@@ -1,0 +1,24 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "./node_modules/.bin/bower install",
+    "start": "./node_modules/.bin/http-serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrap/resume.git"
+  },
+  "author": "Mike Rapadas <mike@mrap.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mrap/resume/issues"
+  },
+  "homepage": "https://github.com/mrap/resume#readme",
+  "dependencies": {
+    "bower": "^1.8.2",
+    "http-serve": "^1.0.1"
+  }
+}
