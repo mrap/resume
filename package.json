@@ -19,6 +19,7 @@
   "homepage": "https://github.com/mrap/resume#readme",
   "dependencies": {
     "bower": "^1.8.2",
+    "html-pdf": "^2.2.0",
     "http-serve": "^1.0.1"
   }
 }

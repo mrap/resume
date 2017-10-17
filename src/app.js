@@ -185,6 +185,10 @@ const tidbits = [
 ];
 
 const App = React.createClass({
+  componentDidMount: function(){
+    injectAssets()
+  },
+
   render: function() {
     return (
       <div className="page">
@@ -433,3 +437,37 @@ ReactDOM.render(
   <App />,
   document.getElementById('content')
 );
+
+function injectAssets() {
+  const imgs = document.getElementsByTagName('img');
+  for (let i = 0; i < imgs.length; ++i) {
+    replaceWithDataUri(imgs[i]);
+  }
+}
+
+function replaceWithDataUri(imgElem) {
+  getDataUri(imgElem.src).then(dataUri => {
+    imgElem.src = dataUri;
+  });
+}
+
+function getDataUri(url) {
+  return new Promise((resolve, reject) => {
+    const image = new Image();
+
+    image.onload = function () {
+      try {
+        const canvas = document.createElement('canvas');
+        canvas.width = this.naturalWidth;
+        canvas.height = this.naturalHeight;
+        canvas.getContext('2d').drawImage(this, 0, 0);
+        resolve(canvas.toDataURL('image/png'));
+      } catch (e) {
+        reject(e);
+      }
+    };
+
+    image.src = url;
+  });
+}
+
