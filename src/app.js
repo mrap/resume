@@ -12,7 +12,7 @@ const jobItems = [
     role: 'Software Development Engineer',
     location: Location.CUPERTINO,
     startDate: 'March 2017',
-    endDate: 'Present',
+    endDate: 'April 2018',
     faIcon: 'fa-amazon',
     details: "Trailblazing the next generation of mission-critical automation at AWS, Hardware Engineering.",
   },
