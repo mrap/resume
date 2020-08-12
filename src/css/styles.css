@@ -27,7 +27,10 @@ body {
 
 .page {
   position: absolute;
-  top: 20px; right: 0; bottom:0; left: -60px;
+  top: 20px;
+  right: 0;
+  bottom: 0;
+  left: -60px;
   margin: auto;
 }
 
@@ -59,7 +62,7 @@ body {
   font-size: 14pt;
   font-style: italic;
   font-weight: normal;
-  color: #6B6B69;
+  color: #6b6b69;
 }
 
 .timeline-item {
@@ -138,11 +141,11 @@ i {
 }
 
 /* Allow wrapping */
-.icon-items > .row .columns:nth-child(4n+1) {
+.icon-items > .row .columns:nth-child(4n + 1) {
   margin-left: 0;
 }
 
-.icon-items > .row .columns:nth-child(n+5) {
+.icon-items > .row .columns:nth-child(n + 5) {
   margin-top: 1em;
 }
 
@@ -159,7 +162,8 @@ i {
   margin-bottom: 1em;
 }
 
-.tidbit, .item-details {
+.tidbit,
+.item-details {
   font-size: 9pt;
 }
 
@@ -172,7 +176,7 @@ i {
 }
 
 .inline-icon-item {
-  color: #6B6B69;
+  color: #6b6b69;
 }
 
 .inline-icon-item > span {
