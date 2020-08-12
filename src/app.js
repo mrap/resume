@@ -232,6 +232,10 @@ const App = React.createClass({
                 <i className="fa fa-user fa-fw"></i>
                 <span>http://mrap.me</span>
               </div>
+              <div className="inline-icon-item">
+                <i className="fa fa-spotify fa-fw"></i>
+                <span>IIMORA</span>
+              </div>
             </div>
           </div>
           <div className="row">
