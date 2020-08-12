@@ -67,8 +67,15 @@ body {
 
 .timeline-item {
   font-size: 11pt;
-  margin-bottom: 10pt;
+  margin-bottom: 20pt;
   line-height: 1.4;
+}
+
+@media print {
+  /* Avoid a timeline-item section from being cut off */
+  .timeline-item:nth-child(7) {
+    margin-top: 20vh;
+  }
 }
 
 .item-dates {
