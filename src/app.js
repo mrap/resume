@@ -8,6 +8,16 @@ const Location = {
 
 const jobItems = [
   {
+    title: 'IIMORA',
+    role: 'Music Producer',
+    location: Location.SF,
+    startDate: 'Mar 2018',
+    endDate: 'Aug 2020',
+    faIcon: 'fa-music',
+    details:
+      'Curiously dove into full time into music production. Experimented with various genre blends to discover a unique sound. Produced hundreds of songs using Ableton Live and Logic Pro X. Released three albums including Hiatus. Attracted listeners from all over the world with over 49K plays on Soundcloud.',
+  },
+  {
     title: 'Amazon Web Services',
     role: 'Software Development Engineer',
     location: Location.CUPERTINO,
