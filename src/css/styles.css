@@ -178,8 +178,9 @@ i {
   vertical-align: middle;
 }
 
-.contact-info {
-  text-align: right;
+.contact-info-wrapper {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .inline-icon-item {

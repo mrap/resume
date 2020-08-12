@@ -215,26 +215,28 @@ const App = React.createClass({
                 avatarSrc="/src/img/avatar.png"
               />
             </div>
-            <div className="five columns contact-info">
-              <div className="inline-icon-item">
-                <i className="fa fa-mobile fa-fw"></i>
-                <span>(415) 887-8085</span>
-              </div>
-              <div className="inline-icon-item">
-                <i className="fa fa-envelope fa-fw"></i>
-                <span>mike@mrap.me</span>
-              </div>
-              <div className="inline-icon-item">
-                <i className="fa fa-github fa-fw"></i>
-                <span>github.com/mrap</span>
-              </div>
-              <div className="inline-icon-item">
-                <i className="fa fa-user fa-fw"></i>
-                <span>http://mrap.me</span>
-              </div>
-              <div className="inline-icon-item">
-                <i className="fa fa-spotify fa-fw"></i>
-                <span>IIMORA</span>
+            <div className="five columns contact-info-wrapper">
+              <div className="contact-info">
+                <div className="inline-icon-item">
+                  <i className="fa fa-mobile fa-fw"></i>
+                  <span>(415) 887-8085</span>
+                </div>
+                <div className="inline-icon-item">
+                  <i className="fa fa-envelope fa-fw"></i>
+                  <span>mike@mrap.me</span>
+                </div>
+                <div className="inline-icon-item">
+                  <i className="fa fa-github fa-fw"></i>
+                  <span>github.com/mrap</span>
+                </div>
+                <div className="inline-icon-item">
+                  <i className="fa fa-user fa-fw"></i>
+                  <span>http://mrap.me</span>
+                </div>
+                <div className="inline-icon-item">
+                  <i className="fa fa-spotify fa-fw"></i>
+                  <span>IIMORA</span>
+                </div>
               </div>
             </div>
           </div>
