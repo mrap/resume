@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "postinstall": "./node_modules/.bin/bower install",
-    "start": "./node_modules/.bin/http-serve"
+    "start": "./node_modules/.bin/http-server"
   },
   "repository": {
     "type": "git",
@@ -18,7 +17,12 @@
   },
   "homepage": "https://github.com/mrap/resume#readme",
   "dependencies": {
-    "bower": "^1.8.2",
-    "http-serve": "^1.0.1"
+    "babel": "^5.8.38",
+    "devicon": "v2.0",
+    "font-awesome": "^4.6.3",
+    "http-server": "^0.12.3 ",
+    "react": "^15.2.1",
+    "react-dom": "^15.2.1",
+    "skeleton-css": "^2.0.4"
   }
 }
