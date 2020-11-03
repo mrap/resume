@@ -27,8 +27,8 @@ body {
 
 .page {
   position: absolute;
-  top: 20px;
-  right: 0;
+  top: 30px;
+  right: 45px;
   bottom: 0;
   left: -60px;
   margin: auto;
@@ -40,29 +40,26 @@ body {
 
 .hero-header {
   font-family: 'Share', cursive;
-  margin-bottom: 1em;
+  margin-bottom: 5rem;
   color: #3b4047;
 }
 
-.hero-header .avatar {
-  text-align: right;
-}
-
 .hero-title {
-  margin-left: 32px; // align with timeline
+  margin-left: 122px; /* A align with timeline */
 }
 
 .hero-title > .title {
-  font-size: 48pt;
-  line-height: 40pt;
+  font-size: 50pt;
+  line-height: 58pt;
 }
 
 .hero-title > .subtitle {
-  line-height: 2;
-  font-size: 14pt;
+  line-height: 1.2;
+  font-size: 13pt;
   font-style: italic;
   font-weight: normal;
   color: #6b6b69;
+  margin-left: 4px; /* Scoot to align with header since this is italic */
 }
 
 .timeline-item {
@@ -134,7 +131,7 @@ i {
 .page-line {
   top: 0;
   bottom: 0;
-  left: 211px;
+  left: 202px;
   position: absolute;
   border-left: 3px solid #8a8b8a;
 }
