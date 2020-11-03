@@ -208,14 +208,14 @@ const App = React.createClass({
       <div className="page">
         <div className="container">
           <div className="row">
-            <div className="seven columns">
+            <div className="eight columns">
               <HeroTitle
                 title="Mike Rapadas"
-                subtitle="Building Beyond Myself"
+                subtitle="A high-impact, ultra-versatile engineer fueled by captivating projects and driven teams."
                 avatarSrc="/src/img/avatar.png"
               />
             </div>
-            <div className="five columns contact-info-wrapper">
+            <div className="four columns contact-info-wrapper">
               <div className="contact-info">
                 <div className="inline-icon-item">
                   <i className="fa fa-mobile fa-fw"></i>
@@ -291,15 +291,7 @@ const HeroTitle = React.createClass({
     return (
       <div className="hero-header">
         <div className="row">
-          <div className="five columns avatar">
-            <img
-              width="122"
-              src={this.props.avatarSrc}
-              alt="Me"
-              className="u-max-full-width"
-            />
-          </div>
-          <div className="seven columns">
+          <div className="twelve columns">
             <div className="hero-title">
               <div className="title">{this.props.title}</div>
               <div className="subtitle">{this.props.subtitle}</div>
