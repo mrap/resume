@@ -210,7 +210,7 @@ const App = React.createClass({
           <div className="row">
             <div className="eight columns">
               <HeroTitle
-                title="Mike Rapadas"
+                title="Michael Rapadas"
                 subtitle="A high-impact, ultra-versatile engineer fueled by captivating projects and driven teams."
                 avatarSrc="/src/img/avatar.png"
               />
