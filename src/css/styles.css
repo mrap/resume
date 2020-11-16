@@ -69,9 +69,8 @@ body {
 }
 
 @media print {
-  /* Avoid a timeline-item section from being cut off */
-  .timeline-item:nth-child(7) {
-    margin-top: 20vh;
+  .timeline-item {
+    break-inside: avoid;
   }
 }
 
