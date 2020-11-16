@@ -208,14 +208,14 @@ const App = React.createClass({
       <div className="page">
         <div className="container">
           <div className="row">
-            <div className="eight columns">
+            <div className="nine columns">
               <HeroTitle
                 title="Michael Rapadas"
                 subtitle="A high-impact, ultra-versatile engineer fueled by captivating projects and driven teams."
                 avatarSrc="/src/img/avatar.png"
               />
             </div>
-            <div className="four columns contact-info-wrapper">
+            <div className="three columns contact-info-wrapper">
               <div className="contact-info">
                 <div className="inline-icon-item">
                   <i className="fa fa-mobile fa-fw"></i>
