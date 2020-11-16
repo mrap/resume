@@ -349,12 +349,7 @@ const TimelineItemHeader = React.createClass({
   render: function () {
     let role = null;
     if (this.props.item.role) {
-      role = (
-        <div className="item-role">
-          {this.props.item.role}
-          <span className="item-role-at"> at </span>
-        </div>
-      );
+      role = <div className="item-role">{this.props.item.role}</div>;
     }
 
     return (

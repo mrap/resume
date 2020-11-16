@@ -1,5 +1,9 @@
 @import 'https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600|Share:400i,700';
 
+:root {
+  --timeline-item-header-voffset: 7px;
+}
+
 @page {
   size: letter;
 }
@@ -77,6 +81,7 @@ body {
 .item-dates {
   font-size: 8pt;
   text-align: right;
+  margin-top: var(--timeline-item-header-voffset);
 }
 
 .timeline {
@@ -90,8 +95,7 @@ body {
 .timeline-milestone-icon {
   position: relative;
   background: white;
-  margin-top: -4px;
-  padding: 2px 0;
+  margin-top: var(--timeline-item-header-voffset);
 }
 
 .section-header-title {
@@ -111,8 +115,8 @@ i {
   font-weight: bold;
 }
 
-.item-header > * {
-  display: inline;
+.item-title {
+  font-weight: normal;
 }
 
 .item-role-at {
@@ -128,7 +132,7 @@ i {
 }
 
 .page-line {
-  top: 0;
+  top: var(--timeline-item-header-voffset);
   bottom: 0;
   left: 202px;
   position: absolute;
