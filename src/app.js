@@ -22,7 +22,7 @@ const jobItems = [
     role: 'Software Development Engineer',
     location: Location.CUPERTINO,
     startDate: 'Mar 2017',
-    endDate: 'Apr 2018',
+    endDate: 'Mar 2018',
     faIcon: 'fa-amazon',
     details:
       'Trailblazed the next generation of mission-critical automation at AWS, Hardware Engineering. Spearheaded innovative central infrastructure project that enables AWS to scale hardware beyond its current capacities. Built a MVP over a weekend that became the catalyst for a revolutionary internal hardware design and collaboration product. Led my team to build and deploy a multi-framework project which became the basis for the future end-to-end pipeline for AWS hardware.',
@@ -32,7 +32,7 @@ const jobItems = [
     role: 'Software Engineer',
     location: Location.LA,
     startDate: 'Jan 2016',
-    endDate: 'Jan 2017',
+    endDate: 'Oct 2016',
     faIcon: 'fa-video-camera',
     details:
       'Curated the core framework that backs our node.js application architecture. Led Android development of major video products, vastly increasing stability, performance, and maintainability.  Rebuilt our core video decoder, achieving buttery-smooth realtime decoding+rendering at 25% the original memory.',
