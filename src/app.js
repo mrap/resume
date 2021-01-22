@@ -19,7 +19,7 @@ const jobItems = [
   },
   {
     title: 'Amazon Web Services',
-    role: 'Software Development Engineer',
+    role: 'Software Development Engineer II',
     location: Location.CUPERTINO,
     startDate: 'Mar 2017',
     endDate: 'Mar 2018',
