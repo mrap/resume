@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/mrap/resume#readme",
   "dependencies": {
-    "babel": "^5.8.38",
+    "babel": "^6.23.0",
     "devicon": "v2.0",
     "font-awesome": "^4.6.3",
     "http-server": "^0.12.3 ",
