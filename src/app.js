@@ -26,7 +26,7 @@ const jobItems = [
     endDate: "Aug 2020",
     faIcon: "fa-music",
     details:
-      "Curiously dove into full time into music production. Experimented with various genre blends to discover a unique sound. Produced hundreds of songs using Ableton Live and Logic Pro X. Released three albums including Hiatus. Attracted listeners from all over the world with over 49K plays on Soundcloud.",
+      "Dedicated time to deeply engage with a passion for music production, independently releasing three albums and accumulating over 49K plays globally.",
   },
   {
     title: "Amazon Web Services",
