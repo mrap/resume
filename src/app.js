@@ -1,205 +1,216 @@
-'use strict';
+"use strict";
 
 const Location = {
-  CUPERTINO: 'Cupertino, CA',
-  LA: 'Los Angeles, CA',
-  SF: 'San Francisco, CA',
+  CUPERTINO: "Cupertino, CA",
+  LA: "Los Angeles, CA",
+  SF: "San Francisco, CA",
+  NYC: "New York City, NY",
 };
 
 const jobItems = [
   {
-    title: 'IIMORA',
-    role: 'Music Producer',
+    title: "Google",
+    role: "Web Solutions Engineer",
+    location: Location.NYC,
+    startDate: "Feb 2021",
+    endDate: "Present",
+    faIcon: "fa-google",
+    details:
+      "Led, designed, developed, and maintained impactful fullstack tools and data pipelines that empower Google Ads sellside with critical intel and substantial FTE savings. Led projects consisting of multiple cross-functional teams, taking on the role of de facto project manager to ensure timely delivery, elated stakeholders, and realizable uplift.",
+  },
+  {
+    title: "IIMORA",
+    role: "Music Producer",
     location: Location.SF,
-    startDate: 'Mar 2018',
-    endDate: 'Aug 2020',
-    faIcon: 'fa-music',
+    startDate: "Mar 2018",
+    endDate: "Aug 2020",
+    faIcon: "fa-music",
     details:
-      'Curiously dove into full time into music production. Experimented with various genre blends to discover a unique sound. Produced hundreds of songs using Ableton Live and Logic Pro X. Released three albums including Hiatus. Attracted listeners from all over the world with over 49K plays on Soundcloud.',
+      "Curiously dove into full time into music production. Experimented with various genre blends to discover a unique sound. Produced hundreds of songs using Ableton Live and Logic Pro X. Released three albums including Hiatus. Attracted listeners from all over the world with over 49K plays on Soundcloud.",
   },
   {
-    title: 'Amazon Web Services',
-    role: 'Software Development Engineer II',
+    title: "Amazon Web Services",
+    role: "Software Development Engineer II",
     location: Location.CUPERTINO,
-    startDate: 'Mar 2017',
-    endDate: 'Mar 2018',
-    faIcon: 'fa-amazon',
+    startDate: "Mar 2017",
+    endDate: "Mar 2018",
+    faIcon: "fa-amazon",
     details:
-      'Trailblazed the next generation of mission-critical automation at AWS, Hardware Engineering. Spearheaded innovative central infrastructure project that enables AWS to scale hardware beyond its current capacities. Built a MVP over a weekend that became the catalyst for a revolutionary internal hardware design and collaboration product. Led my team to build and deploy a multi-framework project which became the basis for the future end-to-end pipeline for AWS hardware.',
+      "Trailblazed the next generation of mission-critical automation at AWS, Hardware Engineering. Spearheaded innovative central infrastructure project that enables AWS to scale hardware beyond its current capacities. Built a MVP over a weekend that became the catalyst for a revolutionary internal hardware design and collaboration product. Led my team to build and deploy a multi-framework project which became the basis for the future end-to-end pipeline for AWS hardware.",
   },
   {
-    title: 'Ubiquiti Networks',
-    role: 'Software Engineer',
+    title: "Ubiquiti Networks",
+    role: "Software Engineer",
     location: Location.LA,
-    startDate: 'Jan 2016',
-    endDate: 'Oct 2016',
-    faIcon: 'fa-video-camera',
+    startDate: "Jan 2016",
+    endDate: "Oct 2016",
+    faIcon: "fa-video-camera",
     details:
-      'Curated the core framework that backs our node.js application architecture. Led Android development of major video products, vastly increasing stability, performance, and maintainability.  Rebuilt our core video decoder, achieving buttery-smooth realtime decoding+rendering at 25% the original memory.',
+      "Curated the core framework that backs our node.js application architecture. Led Android development of major video products, vastly increasing stability, performance, and maintainability.  Rebuilt our core video decoder, achieving buttery-smooth realtime decoding+rendering at 25% the original memory.",
   },
   {
-    title: 'OTOY',
-    role: 'Senior Software Engineer',
+    title: "OTOY",
+    role: "Senior Software Engineer",
     location: Location.LA,
-    startDate: 'Feb 2015',
-    endDate: 'Jan 2016',
-    faIcon: 'fa-braille',
+    startDate: "Feb 2015",
+    endDate: "Jan 2016",
+    faIcon: "fa-braille",
     details: `Engineered our blazingly fast streaming client: realtime desktops to mobile with super low latency @ +60fps.  Core engineer of Octane Render Cloud (ORC), a cloud graphics rendering platform that turned render "weeks" into "hours".  Led development of ORC's frontend dashboard.`,
   },
   {
-    title: 'Rollbar',
-    role: 'Fullstack Engineer',
+    title: "Rollbar",
+    role: "Fullstack Engineer",
     location: Location.SF,
-    startDate: 'Sept 2014',
-    endDate: 'Oct 2014',
-    faIcon: 'fa-stack-overflow',
+    startDate: "Sept 2014",
+    endDate: "Oct 2014",
+    faIcon: "fa-stack-overflow",
     details:
       "Made issue management even easier by enabling users to connect and sync items with any of Rollbar's eleven integrated services, which include Github and Trello.  Made bugs easier to squash in Ruby by exposing local variable's state for each stack frame.",
   },
   {
-    title: 'Rise Labs',
-    role: 'iOS & Web Engineer',
+    title: "Rise Labs",
+    role: "iOS & Web Engineer",
     location: Location.SF,
-    startDate: 'Jun 2014',
-    endDate: 'Sept 2014',
-    faIcon: 'fa-cutlery',
+    startDate: "Jun 2014",
+    endDate: "Sept 2014",
+    faIcon: "fa-cutlery",
     details:
       "Rebuilt the iOS app's camera to snap photos at 6.8x original quality, while only using half the memory.  Rebuilt the coaching dashboard to be fully responsive for all devices.  Created the new flexible photo layout for browsing user meals at a glance.  Hacked and shipped the beautiful homepage redesign in only three days.",
   },
   {
-    title: 'Freelance Fullstack Engineer',
+    title: "Freelance Fullstack Engineer",
     location: Location.SF,
-    startDate: 'Mar 2013',
-    endDate: 'Aug 2014',
-    faIcon: 'fa-briefcase',
+    startDate: "Mar 2013",
+    endDate: "Aug 2014",
+    faIcon: "fa-briefcase",
     details:
-      'Built and deployed a wide array of products on web, OSX, and iOS platforms.  Frequent, stable deployments via agile workflow.',
+      "Built and deployed a wide array of products on web, OSX, and iOS platforms.  Frequent, stable deployments via agile workflow.",
   },
   {
-    title: 'BlurtAbout',
-    role: 'Co-founder, iOS Engineer',
+    title: "BlurtAbout",
+    role: "Co-founder, iOS Engineer",
     location: Location.SF,
-    startDate: 'Nov 2011',
-    endDate: 'Mar 2013',
-    faIcon: 'fa-pied-piper',
+    startDate: "Nov 2011",
+    endDate: "Mar 2013",
+    faIcon: "fa-pied-piper",
     details:
-      'All-hats founder doing anything and everything to create a relevant and super-connected social experience for mobile.',
+      "All-hats founder doing anything and everything to create a relevant and super-connected social experience for mobile.",
   },
 ];
 
 const projectItems = [
   {
-    title: 'Zen Typing',
-    location: 'Github: mrap/combo, mrap/wordpatterns',
-    startDate: 'Dec 2014',
-    endDate: 'Jan 2015',
-    faIcon: 'fa-keyboard-o',
+    title: "Zen Typing",
+    location: "Github: mrap/combo, mrap/wordpatterns",
+    startDate: "Dec 2014",
+    endDate: "Jan 2015",
+    faIcon: "fa-keyboard-o",
     details:
-      'A smarter way to improve your typing. Open-sourced web app built with AngularJS + Go. Uses a superfast word analyzer library built in Go.',
+      "A smarter way to improve your typing. Open-sourced web app built with AngularJS + Go. Uses a superfast word analyzer library built in Go.",
   },
   {
-    title: 'Skimi.io',
-    location: 'Github: mrap/skim',
-    startDate: 'Mar 7th, 2014',
-    endDate: 'Mar 9th, 2014',
-    faIcon: 'fa-book',
+    title: "Skimi.io",
+    location: "Github: mrap/skim",
+    startDate: "Mar 7th, 2014",
+    endDate: "Mar 9th, 2014",
+    faIcon: "fa-book",
     details:
-      'Read a zillion times faster. Speed-reading web app built with AngularJS+Rails.',
+      "Read a zillion times faster. Speed-reading web app built with AngularJS+Rails.",
   },
 ];
 
 const languageIconItems = [
   {
-    title: 'Go',
-    devicon: 'devicon-go-plain',
+    title: "Go",
+    devicon: "devicon-go-plain",
   },
   {
-    title: 'JS',
-    devicon: 'devicon-javascript-plain',
+    title: "JS",
+    devicon: "devicon-javascript-plain",
   },
   {
-    title: 'Java',
-    devicon: 'devicon-java-plain',
+    title: "Java",
+    devicon: "devicon-java-plain",
   },
   {
-    title: 'Swift/Obj-C',
-    devicon: 'devicon-apple-original',
+    title: "Swift/Obj-C",
+    devicon: "devicon-apple-original",
   },
   {
-    title: 'Ruby',
-    devicon: 'devicon-ruby-plain',
+    title: "Ruby",
+    devicon: "devicon-ruby-plain",
   },
   {
-    title: 'Python',
-    devicon: 'devicon-python-plain',
+    title: "Python",
+    devicon: "devicon-python-plain",
   },
   {
-    title: 'C',
-    devicon: 'devicon-c-plain',
+    title: "C",
+    devicon: "devicon-c-plain",
   },
   {
-    title: 'C++',
-    devicon: 'devicon-cplusplus-plain',
+    title: "C++",
+    devicon: "devicon-cplusplus-plain",
   },
 ];
 
 const skillsIconItems = [
   {
-    title: 'Node.js',
-    devicon: 'devicon-nodejs-plain',
+    title: "Node.js",
+    devicon: "devicon-nodejs-plain",
   },
   {
-    title: 'React',
-    devicon: 'devicon-react-original',
+    title: "React",
+    devicon: "devicon-react-original",
   },
   {
-    title: 'Android',
-    devicon: 'devicon-android-plain',
+    title: "Android",
+    devicon: "devicon-android-plain",
   },
   {
-    title: 'RoR',
-    devicon: 'devicon-rails-plain',
+    title: "RoR",
+    devicon: "devicon-rails-plain",
   },
   {
-    title: 'AngularJS',
-    devicon: 'devicon-angularjs-plain',
+    title: "AngularJS",
+    devicon: "devicon-angularjs-plain",
   },
   {
-    title: 'CSS',
-    devicon: 'devicon-css3-plain',
+    title: "CSS",
+    devicon: "devicon-css3-plain",
   },
   {
-    title: 'Sass',
-    devicon: 'devicon-sass-original',
+    title: "Sass",
+    devicon: "devicon-sass-original",
   },
   {
-    title: 'HTML',
-    devicon: 'devicon-html5-plain',
+    title: "HTML",
+    devicon: "devicon-html5-plain",
   },
   {
-    title: 'Redis',
-    devicon: 'devicon-redis-plain',
+    title: "Redis",
+    devicon: "devicon-redis-plain",
   },
   {
-    title: 'MongoDB',
-    devicon: 'devicon-mongodb-plain',
+    title: "MongoDB",
+    devicon: "devicon-mongodb-plain",
   },
   {
-    title: 'Postgres',
-    devicon: 'devicon-postgresql-plain',
+    title: "Postgres",
+    devicon: "devicon-postgresql-plain",
   },
   {
-    title: 'Webrtc',
-    devicon: 'fa fa-connectdevelop',
+    title: "Webrtc",
+    devicon: "fa fa-connectdevelop",
   },
 ];
 
 const tidbits = [
-  'Personally built and deployed applications used by +100K users worldwide.',
-  'Spritz needed 3 years and $3.5m to release a “demo” of their speed reading app. Built and deployed my own in 3 days.',
-  'Rebuilt Rise’s iOS camera plugin: 6.8x the photo quality at only half the memory.',
-  'Apple has been featuring Sunriser, iOS app, in the App Store since May 2014.',
-  'Open-sourced one of the first JSON parsers for Swift.',
+  "Personally built and deployed applications used by +100K users worldwide.",
+  "Spritz needed 3 years and $3.5m to release a “demo” of their speed reading app. Built and deployed my own in 3 days.",
+  "Rebuilt Rise’s iOS camera plugin: 6.8x the photo quality at only half the memory.",
+  "Apple has been featuring Sunriser, iOS app, in the App Store since May 2014.",
+  "Open-sourced one of the first JSON parsers for Swift.",
 ];
 
 const App = React.createClass({
@@ -266,7 +277,7 @@ const App = React.createClass({
                 items={skillsIconItems}
               />
               <SectionHeader title="Tidbits" faIcon="fa-thumbs-up" />
-              {tidbits.map(t => {
+              {tidbits.map((t) => {
                 return (
                   <div className="row tidbit">
                     <div className="twelve columns">{t}</div>
@@ -277,7 +288,7 @@ const App = React.createClass({
           </div>
 
           <div className="corner-footer">
-            I <i className="fa fa-heart-o"></i>{' '}
+            I <i className="fa fa-heart-o"></i>{" "}
             <i className="devicon-vim-plain"></i>
           </div>
         </div>
@@ -313,7 +324,7 @@ const Timeline = React.createClass({
         />
         <div className="timeline-items">
           {this.props.pageLine ? <div className="page-line"></div> : null}
-          {this.props.items.map(item => {
+          {this.props.items.map((item) => {
             return <TimelineItem item={item} />;
           })}
         </div>
@@ -387,7 +398,7 @@ const TimelineHeader = React.createClass({
 
 const TimelineMilestoneIcon = React.createClass({
   render: function () {
-    const stackClassName = this.props.isLarge ? 'fa-stack fa-lg' : 'fa-stack';
+    const stackClassName = this.props.isLarge ? "fa-stack fa-lg" : "fa-stack";
 
     return (
       <div className="timeline-milestone-icon">
@@ -406,7 +417,7 @@ const IconItems = React.createClass({
       <div className="icon-items">
         <SectionHeader title={this.props.title} faIcon={this.props.faIcon} />
         <div className="row">
-          {this.props.items.map(item => {
+          {this.props.items.map((item) => {
             return (
               <div className="three columns">
                 <IconItem {...item} />
@@ -430,4 +441,4 @@ const IconItem = React.createClass({
   },
 });
 
-ReactDOM.render(<App />, document.getElementById('content'));
+ReactDOM.render(<App />, document.getElementById("content"));
