@@ -36,7 +36,7 @@ const jobItems = [
     endDate: "Mar 2018",
     faIcon: "fa-amazon",
     details:
-      "Trailblazed the next generation of mission-critical automation at AWS, Hardware Engineering. Spearheaded innovative central infrastructure project that enables AWS to scale hardware beyond its current capacities. Built a MVP over a weekend that became the catalyst for a revolutionary internal hardware design and collaboration product. Led my team to build and deploy a multi-framework project which became the basis for the future end-to-end pipeline for AWS hardware.",
+      "Trailblazed the next generation of mission-critical automation at AWS, Hardware Engineering. After identifying and addressing fundamental design flaws in existing approaches, I developed a proof of concept that reshaped the strategic direction of a revolutionary internal hardware collaboration platform. This pivotal contribution positioned me as the tech lead, placing me at the helm of a cross-functional team of senior and junior engineers. Under my leadership, we aligned on solutions projected to significantly reduce maintenance and scaling expenses by 2-3x, earning buy-in from senior stakeholders.",
   },
   {
     title: "Ubiquiti Networks",
