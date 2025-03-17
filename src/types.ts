@@ -5,6 +5,7 @@ export interface JobItem {
   startDate: string;
   endDate: string;
   faIcon: string;
+  brief: string;
   details: string;
 }
 

@@ -131,6 +131,15 @@ i {
   color: #62666b;
 }
 
+.item-brief {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 10pt;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: #3b4047;
+}
+
 .page-line {
   top: var(--timeline-item-header-voffset);
   bottom: 0;

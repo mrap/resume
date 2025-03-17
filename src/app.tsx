@@ -103,6 +103,7 @@ const TimelineItem: React.FC<TimelineItemProps> = ({ item }) => {
       <div className="seven columns">
         <TimelineItemHeader item={item} />
         <div className="item-location">{item.location}</div>
+        {"brief" in item && <div className="item-brief">{item.brief}</div>}
         <div className="item-details">{item.details}</div>
       </div>
     </div>

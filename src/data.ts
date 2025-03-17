@@ -21,6 +21,8 @@ export const jobItems: JobItem[] = [
     startDate: "Feb 2021",
     endDate: "Present",
     faIcon: "fa-google",
+    brief:
+      "Technical lead for internal and external web products serving Google Ads teams.",
     details:
       "Led, designed, developed, and maintained impactful internal and external fullstack products that empower Google Ads sellside with critical intel and substantial FTE savings. Served as Tech Lead for Google's first external Certified Publisher Program portal, enhancing sales efficiency for thousands of users, accelerating pipeline velocity by 53%, and surfacing substantial revenue opportunities. Fully owned end-to-end design and implementation, including schema, infrastructure, API development, and overall architecture for a centralized analytics platform optimizing our entire tool portfolio, enabling strategic focus on high-impact projects and increasing targeted outcomes by over 20%. Also led a natural language data platform project, significantly enhancing organizational data accessibility and empowering data-driven decision-making.",
   },
@@ -31,6 +33,8 @@ export const jobItems: JobItem[] = [
     startDate: "Mar 2018",
     endDate: "Aug 2020",
     faIcon: "fa-music",
+    brief:
+      "Independent electronic music production with global audience reach.",
     details:
       "Dedicated time to deeply engage with a passion for music production, independently releasing three albums and accumulating over 49K plays globally.",
   },
@@ -41,6 +45,8 @@ export const jobItems: JobItem[] = [
     startDate: "Mar 2017",
     endDate: "Mar 2018",
     faIcon: "fa-amazon",
+    brief:
+      "Lead engineer for next-gen hardware engineering automation platform.",
     details:
       "Trailblazed the next generation of mission-critical automation at AWS, Hardware Engineering. After identifying and addressing fundamental design flaws in existing approaches, I developed a proof of concept that reshaped the strategic direction of a revolutionary internal hardware collaboration platform. This pivotal contribution positioned me as the tech lead, placing me at the helm of a cross-functional team of senior and junior engineers. Under my leadership, we aligned on solutions projected to significantly reduce maintenance and scaling expenses by 2-3x, earning buy-in from senior stakeholders.",
   },
@@ -51,6 +57,7 @@ export const jobItems: JobItem[] = [
     startDate: "Jan 2016",
     endDate: "Oct 2016",
     faIcon: "fa-video-camera",
+    brief: "Android and Node.js development for video surveillance products.",
     details:
       "Led Android development and significantly improved performance and maintainability for major video products, achieving real-time video decoding with a 75% reduction in memory usage. Curated a core Node.js application framework, establishing a stable, scalable foundation used across multiple critical products.",
   },
@@ -61,6 +68,8 @@ export const jobItems: JobItem[] = [
     startDate: "Feb 2015",
     endDate: "Jan 2016",
     faIcon: "fa-braille",
+    brief:
+      "Core engineer for cloud rendering platform and streaming technology.",
     details: `Engineered our blazingly fast streaming client: realtime desktops to mobile with super low latency @ +60fps.  Core engineer of Octane Render Cloud (ORC), a cloud graphics rendering platform that turned render "weeks" into "hours".  Led development of ORC's frontend dashboard.`,
   },
   {
@@ -70,6 +79,7 @@ export const jobItems: JobItem[] = [
     startDate: "Sept 2014",
     endDate: "Oct 2014",
     faIcon: "fa-stack-overflow",
+    brief: "Implemented service integrations and Ruby debugging improvements.",
     details:
       "Made issue management even easier by enabling users to connect and sync items with any of Rollbar's eleven integrated services, which include Github and Trello.  Made bugs easier to squash in Ruby by exposing local variable's state for each stack frame.",
   },
@@ -80,6 +90,8 @@ export const jobItems: JobItem[] = [
     startDate: "Jun 2014",
     endDate: "Sept 2014",
     faIcon: "fa-cutlery",
+    brief:
+      "Enhanced mobile and web applications for nutrition coaching platform.",
     details:
       "Rebuilt the iOS app's camera to snap photos at 6.8x original quality, while only using half the memory.  Rebuilt the coaching dashboard to be fully responsive for all devices.  Created the new flexible photo layout for browsing user meals at a glance.  Hacked and shipped the beautiful homepage redesign in only three days.",
   },
@@ -89,6 +101,8 @@ export const jobItems: JobItem[] = [
     startDate: "Mar 2013",
     endDate: "Aug 2014",
     faIcon: "fa-briefcase",
+    brief:
+      "Delivered full-stack web, iOS, and OSX applications for various clients.",
     details:
       "Built and deployed a wide array of products on web, OSX, and iOS platforms.  Frequent, stable deployments via agile workflow.",
   },
@@ -99,6 +113,7 @@ export const jobItems: JobItem[] = [
     startDate: "Nov 2011",
     endDate: "Mar 2013",
     faIcon: "fa-pied-piper",
+    brief: "Co-founded and built mobile social experience from the ground up.",
     details:
       "All-hats founder doing anything and everything to create a relevant and super-connected social experience for mobile.",
   },
