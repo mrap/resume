@@ -131,8 +131,8 @@ export const languageIconItems: LanguageIconItem[] = [
     devicon: "devicon-go-plain",
   },
   {
-    title: "JS",
-    devicon: "devicon-javascript-plain",
+    title: "TypeScript",
+    devicon: "devicon-typescript-plain",
   },
   {
     title: "Java",

@@ -21,7 +21,7 @@
   "homepage": "https://github.com/mrap/resume#readme",
   "dependencies": {
     "babel": "^5.8.38",
-    "devicon": "v2.0",
+    "devicon": "^2.16.0",
     "font-awesome": "^4.6.3",
     "http-server": "^0.12.3 ",
     "react": "^18.2.0",
