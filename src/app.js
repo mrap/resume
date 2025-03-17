@@ -217,7 +217,7 @@ const tidbits = [
   },
   {
     text: "Open-sourced one of the first JSON parsers for Swift.",
-    subtext: "github.com/mrap/SwiftJSONParser",
+    subtext: "Github: mrap/SwiftJSONParser",
   },
 ];
 
