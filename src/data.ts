@@ -92,7 +92,7 @@ export const jobItems: JobItem[] = [
     endDate: "Sept 2014",
     faIcon: "fa-cutlery",
     brief:
-      "Enhanced mobile and web applications for nutrition coaching platform.",
+      "Pioneered a complete overhaul of the nutrition coaching platform, enabling mobile market adoption (>85% of coaches)",
     details:
       "Rebuilt iOS camera to deliver 6.8x photo quality while halving memory usage. Created responsive coaching dashboard and flexible photo layout for meal browsing. Shipped homepage redesign in three days.",
   },
