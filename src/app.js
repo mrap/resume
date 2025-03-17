@@ -206,11 +206,19 @@ const skillsIconItems = [
 ];
 
 const tidbits = [
-  "Personally built and deployed applications used by +100K users worldwide.",
-  "Spritz needed 3 years and $3.5m to release a “demo” of their speed reading app. Built and deployed my own in 3 days.",
-  "Rebuilt Rise’s iOS camera plugin: 6.8x the photo quality at only half the memory.",
-  "Apple has been featuring Sunriser, iOS app, in the App Store since May 2014.",
-  "Open-sourced one of the first JSON parsers for Swift.",
+  {
+    text: "Personally built and deployed applications used by +100K users worldwide.",
+  },
+  {
+    text: `Spritz needed 3 years and $3.5m to release a "demo" of their speed reading app. Built and deployed my own in 3 days.`,
+  },
+  {
+    text: "Rebuilt Rise's iOS camera plugin: 6.8x the photo quality at only half the memory.",
+  },
+  {
+    text: "Open-sourced one of the first JSON parsers for Swift.",
+    subtext: "github.com/mrap/SwiftJSONParser",
+  },
 ];
 
 const App = React.createClass({
@@ -280,7 +288,10 @@ const App = React.createClass({
               {tidbits.map((t) => {
                 return (
                   <div className="row tidbit">
-                    <div className="twelve columns">{t}</div>
+                    <div className="twelve columns">
+                      <div>{t.text}</div>
+                      <div className="subtext">{t.subtext}</div>
+                    </div>
                   </div>
                 );
               })}
