@@ -46,7 +46,7 @@ const jobItems = [
     endDate: "Oct 2016",
     faIcon: "fa-video-camera",
     details:
-      "Curated the core framework that backs our node.js application architecture. Led Android development of major video products, vastly increasing stability, performance, and maintainability.  Rebuilt our core video decoder, achieving buttery-smooth realtime decoding+rendering at 25% the original memory.",
+      "Led Android development and significantly improved performance and maintainability for major video products, achieving real-time video decoding with a 75% reduction in memory usage. Curated a core Node.js application framework, establishing a stable, scalable foundation used across multiple critical products.",
   },
   {
     title: "OTOY",
