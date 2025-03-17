@@ -24,7 +24,7 @@ export const jobItems: JobItem[] = [
     brief:
       "Technical lead for internal and external web products serving Google Ads teams.",
     details:
-      "Led, designed, developed, and maintained impactful internal and external fullstack products that empower Google Ads sellside with critical intel and substantial FTE savings. Served as Tech Lead for Google's first external Certified Publisher Program portal, enhancing sales efficiency for thousands of users, accelerating pipeline velocity by 53%, and surfacing substantial revenue opportunities. Fully owned end-to-end design and implementation, including schema, infrastructure, API development, and overall architecture for a centralized analytics platform optimizing our entire tool portfolio, enabling strategic focus on high-impact projects and increasing targeted outcomes by over 20%. Also led a natural language data platform project, significantly enhancing organizational data accessibility and empowering data-driven decision-making.",
+      "Led and built impactful fullstack products for Google Ads, including the first external Certified Publisher Program portal that accelerated pipeline velocity by 53%. Designed and implemented a centralized analytics platform, increasing targeted outcomes by 20%. Led a natural language data platform project that significantly enhanced organizational data accessibility.",
   },
   {
     title: "IIMORA",
@@ -36,7 +36,7 @@ export const jobItems: JobItem[] = [
     brief:
       "Independent electronic music production with global audience reach.",
     details:
-      "Dedicated time to deeply engage with a passion for music production, independently releasing three albums and accumulating over 49K plays globally.",
+      "Released three electronic music albums independently, reaching 49K+ plays globally.",
   },
   {
     title: "Amazon Web Services",
@@ -48,7 +48,7 @@ export const jobItems: JobItem[] = [
     brief:
       "Lead engineer for next-gen hardware engineering automation platform.",
     details:
-      "Trailblazed the next generation of mission-critical automation at AWS, Hardware Engineering. After identifying and addressing fundamental design flaws in existing approaches, I developed a proof of concept that reshaped the strategic direction of a revolutionary internal hardware collaboration platform. This pivotal contribution positioned me as the tech lead, placing me at the helm of a cross-functional team of senior and junior engineers. Under my leadership, we aligned on solutions projected to significantly reduce maintenance and scaling expenses by 2-3x, earning buy-in from senior stakeholders.",
+      "Led development of AWS Hardware Engineering's next-gen automation platform after identifying design flaws in existing systems. As tech lead, directed a cross-functional team that created solutions projected to reduce maintenance and scaling costs by 2-3x.",
   },
   {
     title: "Ubiquiti Networks",
@@ -59,7 +59,7 @@ export const jobItems: JobItem[] = [
     faIcon: "fa-video-camera",
     brief: "Android and Node.js development for video surveillance products.",
     details:
-      "Led Android development and significantly improved performance and maintainability for major video products, achieving real-time video decoding with a 75% reduction in memory usage. Curated a core Node.js application framework, establishing a stable, scalable foundation used across multiple critical products.",
+      "Led Android development for major video products, achieving real-time video decoding with 75% reduced memory usage. Created a core Node.js application framework used across multiple critical products.",
   },
   {
     title: "OTOY",
@@ -70,7 +70,8 @@ export const jobItems: JobItem[] = [
     faIcon: "fa-braille",
     brief:
       "Core engineer for cloud rendering platform and streaming technology.",
-    details: `Engineered our blazingly fast streaming client: realtime desktops to mobile with super low latency @ +60fps.  Core engineer of Octane Render Cloud (ORC), a cloud graphics rendering platform that turned render "weeks" into "hours".  Led development of ORC's frontend dashboard.`,
+    details:
+      "Engineered streaming client for real-time desktops to mobile at +60fps. Core developer of Octane Render Cloud, turning render 'weeks' into 'hours'. Led frontend dashboard development.",
   },
   {
     title: "Rollbar",
@@ -81,7 +82,7 @@ export const jobItems: JobItem[] = [
     faIcon: "fa-stack-overflow",
     brief: "Implemented service integrations and Ruby debugging improvements.",
     details:
-      "Made issue management even easier by enabling users to connect and sync items with any of Rollbar's eleven integrated services, which include Github and Trello.  Made bugs easier to squash in Ruby by exposing local variable's state for each stack frame.",
+      "Enabled users to connect and sync items with eleven integrated services including Github and Trello. Enhanced Ruby debugging by exposing local variable state for each stack frame.",
   },
   {
     title: "Rise Labs",
@@ -93,7 +94,7 @@ export const jobItems: JobItem[] = [
     brief:
       "Enhanced mobile and web applications for nutrition coaching platform.",
     details:
-      "Rebuilt the iOS app's camera to snap photos at 6.8x original quality, while only using half the memory.  Rebuilt the coaching dashboard to be fully responsive for all devices.  Created the new flexible photo layout for browsing user meals at a glance.  Hacked and shipped the beautiful homepage redesign in only three days.",
+      "Rebuilt iOS camera to deliver 6.8x photo quality while halving memory usage. Created responsive coaching dashboard and flexible photo layout for meal browsing. Shipped homepage redesign in three days.",
   },
   {
     title: "Freelance Fullstack Engineer",
@@ -104,7 +105,7 @@ export const jobItems: JobItem[] = [
     brief:
       "Delivered full-stack web, iOS, and OSX applications for various clients.",
     details:
-      "Built and deployed a wide array of products on web, OSX, and iOS platforms.  Frequent, stable deployments via agile workflow.",
+      "Built and deployed diverse products for web, OSX, and iOS platforms using agile workflow with frequent, stable deployments.",
   },
   {
     title: "BlurtAbout",
@@ -115,7 +116,7 @@ export const jobItems: JobItem[] = [
     faIcon: "fa-pied-piper",
     brief: "Co-founded and built mobile social experience from the ground up.",
     details:
-      "All-hats founder doing anything and everything to create a relevant and super-connected social experience for mobile.",
+      "Founded and built a connected social experience for mobile, handling all aspects from development to business strategy.",
   },
 ];
 
