@@ -4,7 +4,7 @@
   "description": "npm install     npm start",
   "main": "index.js",
   "scripts": {
-    "start": "webpack serve",
+    "start": "webpack serve --mode development --hot",
     "build": "webpack",
     "typecheck": "tsc --noEmit",
     "serve": "http-server"
