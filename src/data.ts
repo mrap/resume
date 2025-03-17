@@ -1,13 +1,19 @@
-"use strict";
+import {
+  JobItem,
+  LanguageIconItem,
+  ProjectItem,
+  SkillsIconItem,
+  Tidbit,
+} from "./types";
 
-const Location = {
+export const Location = {
   CUPERTINO: "Cupertino, CA",
   LA: "Los Angeles, CA",
   SF: "San Francisco, CA",
   NYC: "New York City, NY",
 };
 
-const jobItems = [
+export const jobItems: JobItem[] = [
   {
     title: "Google",
     role: "Web Solutions Engineer",
@@ -98,7 +104,7 @@ const jobItems = [
   },
 ];
 
-const projectItems = [
+export const projectItems: ProjectItem[] = [
   {
     title: "Zen Typing",
     location: "Github: mrap/combo, mrap/wordpatterns",
@@ -119,7 +125,7 @@ const projectItems = [
   },
 ];
 
-const languageIconItems = [
+export const languageIconItems: LanguageIconItem[] = [
   {
     title: "Go",
     devicon: "devicon-go-plain",
@@ -154,7 +160,7 @@ const languageIconItems = [
   },
 ];
 
-const skillsIconItems = [
+export const skillsIconItems: SkillsIconItem[] = [
   {
     title: "Node.js",
     devicon: "devicon-nodejs-plain",
@@ -205,7 +211,7 @@ const skillsIconItems = [
   },
 ];
 
-const tidbits = [
+export const tidbits: Tidbit[] = [
   {
     text: "Personally built and deployed applications used by +100K users worldwide.",
   },
@@ -220,236 +226,3 @@ const tidbits = [
     subtext: "Github: mrap/SwiftJSONParser",
   },
 ];
-
-const App = React.createClass({
-  render: function () {
-    return (
-      <div className="page">
-        <div className="container">
-          <div className="row">
-            <div className="nine columns">
-              <HeroTitle
-                title="Michael Rapadas"
-                subtitle="A high-impact, ultra-versatile software engineer fueled by captivating projects and driven teams."
-                avatarSrc="/src/img/avatar.png"
-              />
-            </div>
-            <div className="three columns contact-info-wrapper">
-              <div className="contact-info">
-                <div className="inline-icon-item">
-                  <i className="fa fa-mobile fa-fw"></i>
-                  <span>(415) 887-8085</span>
-                </div>
-                <div className="inline-icon-item">
-                  <i className="fa fa-envelope fa-fw"></i>
-                  <span>mike@mrap.me</span>
-                </div>
-                <div className="inline-icon-item">
-                  <i className="fa fa-github fa-fw"></i>
-                  <span>github.com/mrap</span>
-                </div>
-                <div className="inline-icon-item">
-                  <i className="fa fa-user fa-fw"></i>
-                  <span>http://mrap.me</span>
-                </div>
-                <div className="inline-icon-item">
-                  <i className="fa fa-spotify fa-fw"></i>
-                  <span>IIMORA</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="row">
-            <div className="eight columns">
-              <Timeline
-                title="The Story"
-                headerIcon="fa-clock-o"
-                items={jobItems}
-                pageLine={true}
-              />
-              <Timeline
-                title="Pet Projects"
-                headerIcon="fa-rocket"
-                items={projectItems}
-              />
-            </div>
-            <div className="four columns">
-              <IconItems
-                title="Fluency"
-                faIcon="fa-code"
-                items={languageIconItems}
-              />
-              <IconItems
-                title="Skills"
-                faIcon="fa-cube"
-                items={skillsIconItems}
-              />
-              <SectionHeader title="Tidbits" faIcon="fa-thumbs-up" />
-              {tidbits.map((t) => {
-                return (
-                  <div className="row tidbit">
-                    <div className="twelve columns">
-                      <div>{t.text}</div>
-                      <div className="subtext">{t.subtext}</div>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-
-          <div className="corner-footer">
-            I <i className="fa fa-heart-o"></i>{" "}
-            <i className="devicon-vim-plain"></i>
-          </div>
-        </div>
-      </div>
-    );
-  },
-});
-
-const HeroTitle = React.createClass({
-  render: function () {
-    return (
-      <div className="hero-header">
-        <div className="row">
-          <div className="twelve columns">
-            <div className="hero-title">
-              <div className="title">{this.props.title}</div>
-              <div className="subtitle">{this.props.subtitle}</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    );
-  },
-});
-
-const Timeline = React.createClass({
-  render: function () {
-    return (
-      <div className="timeline">
-        <TimelineHeader
-          title={this.props.title}
-          faIcon={this.props.headerIcon}
-        />
-        <div className="timeline-items">
-          {this.props.pageLine ? <div className="page-line"></div> : null}
-          {this.props.items.map((item) => {
-            return <TimelineItem item={item} />;
-          })}
-        </div>
-      </div>
-    );
-  },
-});
-
-const TimelineItem = React.createClass({
-  render: function () {
-    return (
-      <div className="row timeline-item">
-        <div className="four columns">
-          <div className="item-dates">
-            <div>{this.props.item.startDate} -</div>
-            <div>{this.props.item.endDate}</div>
-          </div>
-        </div>
-        <div className="one column">
-          <TimelineMilestoneIcon faIcon={this.props.item.faIcon} />
-        </div>
-        <div className="seven columns">
-          <TimelineItemHeader {...this.props} />
-          <div className="item-location">{this.props.item.location}</div>
-          <div className="item-details">{this.props.item.details}</div>
-        </div>
-      </div>
-    );
-  },
-});
-
-const TimelineItemHeader = React.createClass({
-  render: function () {
-    let role = null;
-    if (this.props.item.role) {
-      role = <div className="item-role">{this.props.item.role}</div>;
-    }
-
-    return (
-      <div className="item-header">
-        {role}
-        <div className="item-title">{this.props.item.title}</div>
-      </div>
-    );
-  },
-});
-
-const SectionHeader = React.createClass({
-  render: function () {
-    return <div className="section-header-title">{this.props.title}</div>;
-  },
-});
-
-const TimelineHeader = React.createClass({
-  render: function () {
-    return (
-      <div className="row">
-        <div className="three columns">
-          <div className="invisible">Filler</div>
-        </div>
-        <div className="two columns">
-          <div className="invisible">Filler</div>
-        </div>
-        <div className="seven columns">
-          <SectionHeader {...this.props} />
-        </div>
-      </div>
-    );
-  },
-});
-
-const TimelineMilestoneIcon = React.createClass({
-  render: function () {
-    const stackClassName = this.props.isLarge ? "fa-stack fa-lg" : "fa-stack";
-
-    return (
-      <div className="timeline-milestone-icon">
-        <span className={stackClassName}>
-          <i className="fa fa-circle fa-stack-2x"></i>
-          <i className={`fa ${this.props.faIcon} fa-stack-1x fa-inverse`}></i>
-        </span>
-      </div>
-    );
-  },
-});
-
-const IconItems = React.createClass({
-  render: function () {
-    return (
-      <div className="icon-items">
-        <SectionHeader title={this.props.title} faIcon={this.props.faIcon} />
-        <div className="row">
-          {this.props.items.map((item) => {
-            return (
-              <div className="three columns">
-                <IconItem {...item} />
-              </div>
-            );
-          })}
-        </div>
-      </div>
-    );
-  },
-});
-
-const IconItem = React.createClass({
-  render: function () {
-    return (
-      <div className="icon-item">
-        <i className={`${this.props.devicon}`}></i>
-        <div className="title">{this.props.title}</div>
-      </div>
-    );
-  },
-});
-
-ReactDOM.render(<App />, document.getElementById("content"));
