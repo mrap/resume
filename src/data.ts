@@ -75,7 +75,7 @@ export const jobItems: JobItem[] = [
   },
   {
     title: "Rollbar",
-    role: "Fullstack Engineer",
+    role: "Fullstack Software Engineer",
     location: Location.SF,
     startDate: "Sept 2014",
     endDate: "Oct 2014",
@@ -97,7 +97,7 @@ export const jobItems: JobItem[] = [
       "Rebuilt iOS camera to deliver 6.8x photo quality while halving memory usage. Created responsive coaching dashboard and flexible photo layout for meal browsing. Shipped homepage redesign in three days.",
   },
   {
-    title: "Freelance Fullstack Engineer",
+    title: "Freelance Fullstack Software Engineer",
     location: Location.SF,
     startDate: "Mar 2013",
     endDate: "Aug 2014",
