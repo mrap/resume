@@ -16,7 +16,7 @@ const jobItems = [
     endDate: "Present",
     faIcon: "fa-google",
     details:
-      "Led, designed, developed, and maintained impactful internal and external fullstack products that empower Google Ads sellside with critical intel and substantial FTE savings. Served as Tech Lead for Google's first external Certified Publisher Program portal, enhancing efficiency for 2,000+ users, accelerating pipeline velocity by 53%, and surfacing substantial revenue opportunities. Fully owned end-to-end design and implementation, including schema, infrastructure, API development, and overall architecture for a centralized analytics platform optimizing our entire tool portfolio, enabling strategic focus on high-impact projects and increasing targeted outcomes by over 20%. Also led a natural language data platform project, significantly enhancing organizational data accessibility and empowering data-driven decision-making.",
+      "Led, designed, developed, and maintained impactful internal and external fullstack products that empower Google Ads sellside with critical intel and substantial FTE savings. Served as Tech Lead for Google's first external Certified Publisher Program portal, enhancing sales efficiency for thousands of users, accelerating pipeline velocity by 53%, and surfacing substantial revenue opportunities. Fully owned end-to-end design and implementation, including schema, infrastructure, API development, and overall architecture for a centralized analytics platform optimizing our entire tool portfolio, enabling strategic focus on high-impact projects and increasing targeted outcomes by over 20%. Also led a natural language data platform project, significantly enhancing organizational data accessibility and empowering data-driven decision-making.",
   },
   {
     title: "IIMORA",
@@ -222,7 +222,7 @@ const App = React.createClass({
             <div className="nine columns">
               <HeroTitle
                 title="Michael Rapadas"
-                subtitle="A high-impact, ultra-versatile engineer fueled by captivating projects and driven teams."
+                subtitle="A high-impact, ultra-versatile software engineer fueled by captivating projects and driven teams."
                 avatarSrc="/src/img/avatar.png"
               />
             </div>
